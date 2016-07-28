@@ -1,0 +1,174 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+@font-face {
+    font-family: Ahkio;
+    src: url(fonts/ahkio.ttf);
+}
+@font-face {
+    font-family: 'PT Sans';
+    src: url(fonts/pt_sans.ttf);
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body{
+    background-image: url(stardust.png);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+}
+a{
+    color: white;
+}
+.parent{
+    display: flex;
+    flex-flow: row wrap;
+    font-family: 'PT Sans', sans-serif;
+    align-content: space-between;
+    color: white;
+    max-width: 83.875em;
+    height: 100%;
+    margin: auto;
+}
+.parent h1{
+    font-family: Ahkio;
+    font-size: 5.063em;
+    text-align: center;
+    color: #d6584c;
+    margin-top: 1%;
+}
+.parent h4{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+.parent span{
+    display: block;
+    line-height: 1.5em;
+}
+.logo{
+    flex: 1 100%;
+    margin-bottom: 10em;
+}
+.logo img{
+    display: block;
+    margin: auto;
+}
+.projects, .contacts{
+    display: inline-block;
+    flex: 1 50%;
+}
+.projects a, .contacts a{
+    display: block;
+    line-height: 1.5em;
+}
+.wrap_projects{
+    margin-left: 1.5em;
+}
+.wrap_contacts{
+    margin-left: 1.5em;
+}
+#soon{
+    color: gray;
+    display: inline;
+    font-size: .75em;
+}
+.stuff{
+    margin: 3em auto 0;
+}
+.stuff h4{
+    text-align: center;
+}
+.wrap_stuff{
+    text-align: center;
+}
+.item{
+    display: inline-block;
+    margin: 0 1.25em;
+}
+.item img{
+    width: 18em;
+    display: block;
+}
+h5{
+    margin-top: .5em;
+    text-align: left;
+}
+.footer{
+    flex: 1 100%;
+    text-align: center;
+    border-top: 1px solid black;
+    margin-top: 5%;
+    padding: .5em 0;
+}
+@media all and (max-width: 83.875em){
+    body{
+        font-size: 14px;
+    }
+    .parent{
+        max-width: 63.286em;
+    }
+}
+@media all and (max-width: 63.286em){
+    body{
+        font-size: 12px;
+    }
+    .parent{
+        max-width: 41.333em;
+    }
+}
+@media all and (max-width: 41.333em){
+    .logo{
+        margin-bottom: 0;
+    }
+    .projects, .contacts{
+        flex: 1 100%;
+    }
+    .projects{
+        margin-bottom: 2em;
+    }
+    .stuff{
+        margin: 1em auto 0;
+    }
+}
