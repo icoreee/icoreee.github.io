@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Host: http://dmitryfrolov.ru
+sitemap: http://dmitryfrolov.ru/sitemap.xml

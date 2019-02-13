@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Muller-Regular';
+  src: url('fonts/Muller-Regular.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Muller-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Muller-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/Muller-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/Muller-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -7,168 +21,265 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    text-decoration: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-
-@font-face {
-    font-family: Ahkio;
-    src: url(fonts/ahkio.ttf);
-}
-@font-face {
-    font-family: 'PT Sans';
-    src: url(fonts/pt_sans.ttf);
+	display: block;
 }
 body {
-    line-height: 1;
+	line-height: 1;
 }
 ol, ul {
-    list-style: none;
+	list-style: none;
 }
 blockquote, q {
-    quotes: none;
+	quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content: '';
-    content: none;
+	content: '';
+	content: none;
 }
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 body{
-    background-image: url(stardust.png);
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    font-size: 16px;
+  font-family: 'Muller-Regular', sans-serif;
+  background-color: #fffffd;
 }
-a{
-    color: white;
+.wrap{
+  height: calc(100vh - 3px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 33px;
 }
-.parent{
-    display: flex;
-    flex-flow: row wrap;
-    font-family: 'PT Sans', sans-serif;
-    align-content: space-between;
-    color: white;
-    max-width: 83.875em;
-    height: 100%;
-    margin: auto;
+.name, .footer{
+  color: #0006ff;
+  font-size: 25px;
+  display: block;
 }
-.parent h1{
-    font-family: Ahkio;
-    font-size: 5.063em;
-    text-align: center;
-    color: #d6584c;
-    margin-top: 1%;
-}
-.parent h4{
-    font-size: 1.5em;
-    margin-bottom: 1em;
-}
-.parent span{
-    display: block;
-    line-height: 1.5em;
-}
-.logo{
-    flex: 1 100%;
-    margin-bottom: 10em;
-}
-.logo img{
-    display: block;
-    margin: auto;
-}
-.projects, .contacts{
-    display: inline-block;
-    flex: 1 50%;
-}
-.projects a, .contacts a{
-    display: block;
-    line-height: 1.5em;
-}
-.wrap_projects{
-    margin-left: 1.5em;
-}
-.wrap_contacts{
-    margin-left: 1.5em;
-}
-#soon{
-    color: gray;
-    display: inline;
-    font-size: .75em;
-}
-.stuff{
-    margin: 3em auto 0;
-}
-.stuff h4{
-    text-align: center;
-}
-.wrap_stuff{
-    text-align: center;
-}
-.item{
-    display: inline-block;
-    margin: 0 1.25em;
-}
-.item img{
-    width: 18em;
-    display: block;
-}
-h5{
-    margin-top: .5em;
-    text-align: left;
+.name{
+  margin-top: 28px;
 }
 .footer{
-    flex: 1 100%;
-    text-align: center;
-    border-top: 1px solid black;
-    margin-top: 5%;
-    padding: .5em 0;
+  margin-bottom: 28px;
 }
-@media all and (max-width: 83.875em){
-    body{
-        font-size: 14px;
-    }
-    .parent{
-        max-width: 63.286em;
-    }
+
+.projects{
+  font-size: 30px;
+  line-height: 1.5;
 }
-@media all and (max-width: 63.286em){
-    body{
-        font-size: 12px;
-    }
-    .parent{
-        max-width: 41.333em;
-    }
+.projects div{
+  display: block;
+  margin-bottom: -8px;
 }
-@media all and (max-width: 41.333em){
-    .logo{
-        margin-bottom: 0;
-    }
-    .projects, .contacts{
-        flex: 1 100%;
-    }
-    .projects{
-        margin-bottom: 2em;
-    }
-    .stuff{
-        margin: 1em auto 0;
-    }
+.projects a{
+  text-decoration: none;
+  display: inline-block;
+  height: 58px;
+}
+.project-name{
+  border-bottom: 1px rgba(153,153,153, 0.33) solid;
+  color: #404040;
+  transition: all .4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.project-name:hover{
+  color: #000;
+  border-bottom-color: rgba(153,153,153, 1);
+}
+.case{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 35%;
+  top: 0%;
+  height: 100vh;
+  width: 65vw;
+  /*display: flex;
+  flex-direction: column;
+  justify-content: center;*/
+  background-color: #f9f9f7;
+  visibility: hidden;
+  transition: all .2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.project-preview-wrap{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.project-logo, .project-preview{
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+#universes .project-logo{
+  margin-bottom: 22px;
+  padding-top: 32px;
+}
+#thebatya .project-logo{
+  margin-bottom: 7px;
+  padding-top: 29px;
+}
+#olgamonina .project-logo{
+  margin-bottom: 21px;
+  padding-top: 37px;
+}
+#cheapgames .project-logo{
+  margin-bottom: 12px;
+  padding-top: 37px;
+}
+.project-about{
+  color: black;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+}
+.about-wrap{
+  text-align: center;
+  background-color: #f9f9f7;
+  position: absolute;
+  left: 35%;
+  top: 0%;
+  height: 100vh;
+  width: 65vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.about{
+  margin-top: 10%;
+}
+.about-photo{
+  margin: 0 auto 45px;
+  display: block;
+  transform: rotate(-1deg);
+  box-shadow: 0px 16px 48px 0px rgba(128, 128, 128, 0.33);
+}
+.category{
+  display: block;
+  color: #999999;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  line-height: 26px;
+  margin-top: 34px;
+}
+.items{
+  font-size: 24px;
+  line-height: 35px;
+}
+.contacts{
+  display: flex;
+  flex-direction: row;
+  font-size: 24px;
+  padding-bottom: 31px;
+}
+.phone, .mail{
+  display: inline-block;
+  flex-grow: 1;
+}
+.phone{
+  text-align: left;
+  padding-left: 33px;
+}
+.mail{
+  text-align: right;
+  padding-right: 33px;
+}
+
+.close{
+  position: fixed;
+  left: 97%;
+  top: 1%;
+  text-decoration: none;
+  opacity: 0.5;
+  font-size: 60px;
+  transition: all .2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.close:hover{
+  opacity: 1;
+}
+.universes-wrap .close{
+  color: black;
+}
+.thebatya-wrap .close, .olgamonina-wrap .close, .cheapgames-wrap .close{
+  color: white;
+}
+.case-image{
+  display: block;
+  margin: 0 auto;
+}
+.universes-wrap{
+  margin: 0 auto;
+  height: 7430px;
+  background-image: url(img/universes-case-1920.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: #f5f5f5;
+}
+@media screen and (max-width: 1400px) {
+  .universes-wrap{
+    background-image: url(img/universes-case-1400.png);
+    background-size: contain;
+  }
+}
+.thebatya-wrap{
+  margin: 0 auto;
+  height: 7490px;
+  background-image: url(img/thebatya-case-1920.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: #030404;
+}
+@media screen and (max-width: 1400px) {
+  .thebatya-wrap{
+    background-image: url(img/thebatya-case-1400.png);
+    background-size: contain;
+  }
+}
+.olgamonina-wrap{
+  margin: 0 auto;
+  height: 2280px;
+  background-image: url(img/olgamonina-case-1920.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: #181818;
+}
+@media screen and (max-width: 1400px) {
+  .olgamonina-wrap{
+    background-image: url(img/olgamonina-case-1400.png);
+    background-size: contain;
+  }
+}
+.cheapgames-wrap{
+  margin: 0 auto;
+  height: 3150px;
+  background-image: url(img/cheapgames-case-1920.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: #181818;
+}
+@media screen and (max-width: 1400px) {
+  .cheapgames-wrap{
+    background-image: url(img/cheapgames-case-1400.png);
+    background-size: contain;
+  }
 }

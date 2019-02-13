@@ -1,78 +1,165 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-	<meta name="google-site-verification" content="oxmQgkNPZSC99i8gqGPFtEm9RhpJL3r2z7EDPLf0iOQ" />
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+	    (function (d, w, c) {
+	        (w[c] = w[c] || []).push(function() {
+	            try {
+	                w.yaCounter46408395 = new Ya.Metrika({
+	                    id:46408395,
+	                    clickmap:true,
+	                    trackLinks:true,
+	                    accurateTrackBounce:true,
+	                    webvisor:true
+	                });
+	            } catch(e) { }
+	        });
+
+	        var n = d.getElementsByTagName("script")[0],
+	            s = d.createElement("script"),
+	            f = function () { n.parentNode.insertBefore(s, n); };
+	        s.type = "text/javascript";
+	        s.async = true;
+	        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+	        if (w.opera == "[object Opera]") {
+	            d.addEventListener("DOMContentLoaded", f, false);
+	        } else { f(); }
+	    })(document, window, "yandex_metrika_callbacks");
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/46408395" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+
+	<!-- FAVICONS -->
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+	<link rel="manifest" href="favicons/manifest.json">
+	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#0006ff">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="msapplication-config" content="favicons/browserconfig.xml">
+
+	<!-- OPEN GRAPH -->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Дмитрий Фролов">
+	<meta property="og:description" content="Портфолио веб-дизайнера">
+	<meta property="og:url" content="http://dmitryfrolov.ru">
+	<meta property="og:locale" content="ru_RU">
+	<meta property="og:image" content="img/og.png">
+	<meta property="og:image:width" content="968">
+	<meta property="og:image:height" content="504">
+
+	<title>Дмитрий Фролов</title>
+	<meta content="Занимаюсь веб дизайном и версткой." name="description">
+
 	<link rel="stylesheet" href="style.css">
-	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700|Roboto+Slab:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-	<title>Shawerma Gaming</title>
+	<script>
+  	function show(id) {
+			document.getElementById('about-wrap').style.visibility = "hidden";
+    	document.getElementById(id).style.visibility = "visible";
+			document.getElementById(id).style.opacity = "1";
+  	}
+  	function hide(id) {
+			document.getElementById('about-wrap').style.visibility = "visible";
+    	document.getElementById(id).style.visibility = "hidden";
+			document.getElementById(id).style.opacity = "0";
+  	}
+	</script>
 </head>
 <body>
-	<div class="parent">
-		<div class="logo">
-			<h1>SHAWERMA GAMING</h1>
-		</div>
+	<div class="wrap">
+		<h1 class="name">Дмитрий Фролов</h1>
+
 		<div class="projects">
-			<div class="wrap_projects">
-				<h4>Our project / Наши проекты</h4>
-				<div>
-					<span>CSGOPredict<span id="soon">&nbspComing Soon</span></span>
-					<span>DotaPredict<span id="soon">&nbspComing Soon</span></span>
-					<span>CSGORoller<span id="soon">&nbspComing Soon</span></span>
-					<span>Twitch<span id="soon">&nbspComing Soon</span></span>
-				</div>
+			<div>
+				<a href="universes.html" onMouseOver="show('universes')" onMouseOut="hide('universes')">
+					<span class="project-name">Universes</span>
+					<!-- <span class="project-name" onMouseOver="show('universes')">Universes</span> -->
+				</a>
+			</div>
+
+			<div>
+				<a href="thebatya.html" onMouseOver="show('thebatya')" onMouseOut="hide('thebatya')">
+					<span class="project-name">thebatya</span>
+					<!-- <span class="project-name" onMouseOver="show('thebatya')">thebatya</span> -->
+				</a>
+			</div>
+
+			<div>
+				<a href="olgamonina.html" onMouseOver="show('olgamonina')" onMouseOut="hide('olgamonina')">
+					<span class="project-name">Ольга Монина</span>
+				</a>
+			</div>
+
+			<div>
+				<a href="cheapgames.html" onMouseOver="show('cheapgames')" onMouseOut="hide('cheapgames')">
+					<span class="project-name">Cheap Games</span>
+				</a>
 			</div>
 		</div>
-		<div class="contacts">
-			<div class="wrap_contacts">
-				<h4>Contacts / Контакты</h4>
-				<div>
-					<a href="mailto:mail@shawerma.ga"><span>mail@shawerma.ga</span></a>
-					<a href="http://steamcommunity.com/groups/SHAWERMAGAMING">Steam Group</a>
-					<a href="http://vk.com/checkpnt">VK.com</a>
-					<a href="#">Twitter</a>
-				</div>
+
+		<span class="footer">2017</span>
+
+		<div class="about-wrap" id="about-wrap">
+			<div class="about" >
+				<img src="img/me-profile.png" class="about-photo">
+				<span class="category">Умею</span>
+				<p class="items">Photoshop · Illustrator</br>Figma · HTML · CSS</p>
+				<span class="category">Читаю</span>
+				<p class="items">Горбунова · Штанга</br>A List Apart · Smashing Magazine</p>
+				<span class="category">Увлекаюсь</span>
+				<p class="items">Искусством · Технологиями</p>
+			</div>
+			<div class="contacts">
+				<span class="phone">8 999 207-76-89</span>
+				<span class="mail">icoree@gmail.com</span>
 			</div>
 		</div>
-		<div class="stuff">
-			<h4>Stuff / Вещи</h4>
-			<div class="wrap_stuff">
-				<div class="item">
-					<a href="http://printdirect.ru/storefront/shared_info/6614181">
-						<img src="img/t-shirt.jpg">
-						<h5>Футболка</h5>
-					</a>
-				</div>
-				<div class="item">
-					<a href="http://printdirect.ru/storefront/shared_info/6638186">
-						<img src="img/sweatshirt.jpg">
-						<h5>Кофта</h5>
-					</a>
-				</div>
-				<div class="item">
-					<a href="http://printdirect.ru/storefront/shared_info/6638130">
-						<img src="img/cup.jpg">
-						<h5>Кружка</h5>
-					</a>
-				</div>
-				<div class="item">
-					<a href="http://printdirect.ru/storefront/shared_info/6638135">
-						<img src="img/case.jpg">
-						<h5>Бампер</h5>
-					</a>
-				</div>
+
+		<div class="case" id="universes">
+			<div class="case-about">
+				<img src="img/universes-logo.png" class="project-logo">
+				<span class="project-about">Интернет-магазин интересных вещей</span>
+			</div>
+			<div class="project-preview-wrap">
+				<img src="img/universes-preview.png" class="project-preview universes-preview">
 			</div>
 		</div>
-		<div class="footer">Самая лучшая киберспортивная организация. 2016</div>
+
+		<div class="case" id="thebatya">
+			<div class="case-about">
+				<img src="img/thebatya-logo.png" class="project-logo">
+				<span class="project-about">Журнал про электронные развлечения</span>
+			</div>
+			<div class="project-preview-wrap">
+				<img src="img/thebatya-preview.png" class="project-preview thebatya-preview">
+			</div>
+		</div>
+
+		<div class="case" id="olgamonina">
+			<div class="case-about">
+				<img src="img/olgamonina-logo.png" class="project-logo">
+				<span class="project-about">Сайт для агента по недвижимости</span>
+			</div>
+			<div class="project-preview-wrap">
+				<img src="img/olgamonina-preview.png" class="project-preview olgamonina-preview">
+			</div>
+		</div>
+
+		<div class="case" id="cheapgames">
+			<div class="case-about">
+				<img src="img/cheapgames-logo.png" class="project-logo">
+				<span class="project-about">Интернет-магазин компьютерных игр</span>
+			</div>
+			<div class="project-preview-wrap">
+				<img src="img/cheapgames-preview.png" class="project-preview cheapgames-preview">
+			</div>
+		</div>
+
 	</div>
 </body>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-11490482-6', 'auto');
-  ga('send', 'pageview');
-
-</script>
+</html>
