@@ -1,0 +1,36 @@
+body{
+    font-size: 0.3125vw;
+    margin: 5em;
+    display: grid;
+    grid-template-rows:    repeat(3, 36em);
+    grid-template-columns: repeat(5, 58em);
+    grid-gap: 5em 5em;
+}
+.card{
+    background-color: #FAFAFA;
+    border-radius: 4em;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.card:hover{
+    background-color: #F2F2F6;
+}
+.card:active{
+    background-color: #ECECF4;
+}
+.example{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18em;
+    line-height: 18em;
+    color: #BFBFBF;
+}
+.sign{
+    color: #1B31F7;
+}
+.spaces span{
+    background-color: #D8DCFE;
+}
