@@ -1,4 +1,4 @@
-body{
+body {
     font-size: 0.3125vw;
     margin: 5em;
     display: grid;
@@ -6,7 +6,7 @@ body{
     grid-template-columns: repeat(5, 58em);
     grid-gap: 5em 5em;
 }
-.card{
+.card {
     background-color: #FAFAFA;
     border-radius: 4em;
     overflow: hidden;
@@ -16,21 +16,35 @@ body{
     align-items: center;
     transition: all .2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-.card:hover{
+.card:hover {
     background-color: #F2F2F6;
 }
-.card:active{
+.card:active {
     background-color: #ECECF4;
+    animation-name: feedback;
+    animation-duration: 1s;
 }
-.example{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 18em;
+.example {
+    font-family: 'PT Serif', serif;
+    font-size: 16em;
     line-height: 18em;
     color: #BFBFBF;
 }
-.sign{
+.sign {
     color: #1B31F7;
 }
-.spaces span{
+.spaces span {
     background-color: #D8DCFE;
 }
+
+/* .card::after {
+    content: 'copied';
+    position: absolute;
+    font-size: 3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 28em;
+    height: 8em;
+    background-color: rgba(217, 216, 247, 0.8);
+    text-transform: uppercase;
+    border-radius: 1em;
+} */

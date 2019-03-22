@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Типографские символы</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif&amp;subset=cyrillic" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>
         function copyToClipboard(element) {
@@ -20,9 +21,12 @@
 </body>
 </html>
 <html>
-    <div class="card" onclick="copyToClipboard('#interpunct')">
-        <p class="example">раз&nbsp;<span id="interpunct" class="sign">·</span>&nbsp;раз</p>
+    <div class="card" onclick="copyToClipboard('#em-dash')">
+        <p class="example">раз&nbsp;<span id="em-dash" class="sign">—</span>&nbsp;раз</p>
     </div>
+    <div class="card" onclick="copyToClipboard('#en-dash')">
+        <p class="example">раз&nbsp;<span id="en-dash" class="sign">–</span>&nbsp;раз</p>
+     </div>
     <div class="card spaces" onclick="copyToClipboard('#em-space')">
         <p class="example">раз<span id="em-space" class="sign">&emsp;</span>раз</p>
     </div>
@@ -34,26 +38,5 @@
     </div>
     <div class="card" onclick="copyToClipboard('#interpunct')">
         <p class="example">раз&nbsp;<span id="interpunct" class="sign">·</span>&nbsp;раз</p>
-    </div>
-    <div class="card spaces" onclick="copyToClipboard('#em-space')">
-        <p class="example">раз<span id="em-space" class="sign">&emsp;</span>раз</p>
-    </div>
-    <div class="card spaces" onclick="copyToClipboard('#en-space')">
-        <p class="example">раз<span id="en-space" class="sign">&ensp;</span>раз</p>
-    </div>
-    <div class="card spaces" onclick="copyToClipboard('#thin-space')">
-        <p class="example">раз<span id="thin-space" class="sign">&thinsp;</span>раз</p>
-    </div>
-    <div class="card" onclick="copyToClipboard('#interpunct')">
-        <p class="example">раз&nbsp;<span id="interpunct" class="sign">·</span>&nbsp;раз</p>
-    </div>
-    <div class="card spaces" onclick="copyToClipboard('#em-space')">
-        <p class="example">раз<span id="em-space" class="sign">&emsp;</span>раз</p>
-    </div>
-    <div class="card spaces" onclick="copyToClipboard('#en-space')">
-        <p class="example">раз<span id="en-space" class="sign">&ensp;</span>раз</p>
-    </div>
-    <div class="card spaces" onclick="copyToClipboard('#thin-space')">
-        <p class="example">раз<span id="thin-space" class="sign">&thinsp;</span>раз</p>
     </div>
 </html>

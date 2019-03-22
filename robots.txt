@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /typesigns
 Host: https://dmitryfrolov.ru
 sitemap: https://dmitryfrolov.ru/sitemap.xml
