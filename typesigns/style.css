@@ -58,14 +58,26 @@ h1 {
     background-color: #D8DCFE;
 }
 
-/* .card::after {
+/* .card:active {
     content: 'copied';
     position: absolute;
     font-size: 3rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 28rem;
-    height: 8rem;
-    background-color: rgba(217, 216, 247, 0.8);
+    font-family: 'IBM Plex Sans', sans-serif;
+    letter-spacing: .3rem;
+    width: 20rem;
+    height: 6rem;
+    background-color: rgba(217, 216, 247, 1);
     text-transform: uppercase;
     border-radius: 1rem;
+    text-align: center;
+    animation: feedback 5s infinite;
 } */
+.feedback_anim{
+    animation: feedback 2s;
+}
+
+@keyframes feedback {
+    0%   { transform: scale(1)}
+    50%  { transform: scale(.7)}
+    100% { transform: scale(1) }
+  }

@@ -1,108 +1,135 @@
 <!DOCTYPE html>
-<html lnag="ru">
-<head>
-    <meta charset="UTF-8">
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
     <title>Типографские символы</title>
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:600|PT+Serif&amp;subset=cyrillic" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script>
-        function copyToClipboard(element) {
-            var $temp = $("<input>");
-            $("body").append($temp);
-            $temp.val($(element).text()).select();
-            document.execCommand("copy");
-            $temp.remove();
-}
-    </script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:600|PT+Serif&amp;subset=cyrillic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <h1>Типографские символы</h1>
 
     <div class="search-form">
-        <span>Здесь когда-нибудь будет поиск</span>
-    </div>
-    
-    <div class="card" onclick="copyToClipboard('#em-dash')">
-        <p class="example">раз&nbsp;<span id="em-dash" class="sign">—</span>&nbsp;раз</p>
+      <span>Здесь когда-нибудь будет поиск</span>
     </div>
 
-    <div class="card" onclick="copyToClipboard('#en-dash')">
-        <p class="example">раз&nbsp;<span id="en-dash" class="sign">–</span>&nbsp;раз</p>
-     </div>
-
-    <div class="card spaces" onclick="copyToClipboard('#em-space')">
-        <p class="example">раз<span id="em-space" class="sign">&emsp;</span>раз</p>
+    <div class="card" data-value="—">
+      <p class="example">раз&nbsp;<span class="sign">—</span>&nbsp;раз</p>
     </div>
 
-    <div class="card spaces" onclick="copyToClipboard('#en-space')">
-        <p class="example">раз<span id="en-space" class="sign">&ensp;</span>раз</p>
+    <div class="card" data-value="–">
+      <p class="example">раз&nbsp;<span class="sign">–</span>&nbsp;раз</p>
     </div>
 
-    <div class="card spaces" onclick="copyToClipboard('#thin-space')">
-        <p class="example">раз<span id="thin-space" class="sign">&thinsp;</span>раз</p>
+    <div class="card spaces" data-value=" ">
+      <p class="example">раз<span class="sign">&emsp;</span>раз</p>
     </div>
 
-    <div class="card" onclick="copyToClipboard('#french-quotes')">
-        <p class="example"><span id="french-quotes" class="sign">«»</span></p>
-    </div>
-    
-    <div class="card" onclick="copyToClipboard('#german-quotes')">
-        <p class="example"><span id="german-quotes" class="sign">„“</span></p>
+    <div class="card spaces" data-value=" ">
+      <p class="example">раз<span class="sign">&ensp;</span>раз</p>
     </div>
 
-    <div class="card" onclick="copyToClipboard('#english-double-quotes')">
-        <p class="example"><span id="english-double-quotes" class="sign">“”</span></p>
+    <div class="card spaces" data-value=" ">
+      <p class="example">раз<span class="sign">&thinsp;</span>раз</p>
     </div>
 
-    <div class="card" onclick="copyToClipboard('#english-single-quotes')">
-        <p class="example"><span id="english-single-quotes" class="sign">‘’</span></p>
+    <div class="card" data-value="«»">
+      <p class="example"><span class="sign">«</span>раз<span class="sign">»</span></span></p>
     </div>
 
-    <div class="card" onclick="copyToClipboard('#ruble')">
-        <p class="example">10&thinsp;<span id="ruble" class="sign">₽</span></p>
+    <div class="card" data-value="„“">
+      <p class="example"><span class="sign">„</span>раз<span class="sign">“</span></p>
     </div>
 
-    <div class="card" onclick="copyToClipboard('#interpunct')">
-        <p class="example">раз&nbsp;<span id="interpunct" class="sign">·</span>&nbsp;раз</p>
+    <div class="card" data-value="“”">
+      <p class="example">
+        <span class="sign">“</span>раз<span class="sign">”</span>
+      </p>
     </div>
 
-    <div class="card" onclick="copyToClipboard('#bullet')">
-        <p class="example"><span id="bullet" class="sign">•</span>&nbsp;пу</p>
+    <div class="card" data-value="‘’">
+      <p class="example">
+        <span class="sign">‘</span>раз<span class="sign">’</span>
+      </p>
     </div>
 
-    <div class="card" onclick="copyToClipboard('#minus')">
-        <p class="example">8&nbsp;<span id="minus" class="sign">−</span>&nbsp;4</p>
+    <div class="card" data-value="₽">
+      <p class="example">10&thinsp;<span class="sign">₽</span></p>
     </div>
 
-    <div class="card" onclick="copyToClipboard('#multiplication')">
-        <p class="example">2&nbsp;<span id="multiplication" class="sign">×</span>&nbsp;2</p>
+    <div class="card" data-value="·">
+      <p class="example">раз&nbsp;<span class="sign">·</span>&nbsp;раз</p>
     </div>
 
-    <div class="card" onclick="copyToClipboard('#euro')">
-        <p class="example">10&thinsp;<span id="euro" class="sign">€</span></p>
+    <div class="card" data-value="•">
+      <p class="example"><span class="sign">•</span>&nbsp;пу</p>
     </div>
 
-    <div class="card" onclick="copyToClipboard('#ellipsis')">
-        <p class="example">ла<span id="ellipsis" class="sign">…</span></p>
+    <div class="card" data-value="−">
+      <p class="example">8&nbsp;<span class="sign">−</span>&nbsp;4</p>
     </div>
 
-    <div class="card" onclick="copyToClipboard('#section')">
-        <p class="example"><span id="section" class="sign">§</span>&nbsp;2.</p>
+    <div class="card" data-value="×">
+      <p class="example">2&nbsp;<span class="sign">×</span>&nbsp;2</p>
     </div>
 
-    <div class="card" onclick="copyToClipboard('#copyright')">
-        <p class="example"><span id="copyright" class="sign">©</span>&nbsp;All</p>
+    <div class="card" data-value="€">
+      <p class="example">10&thinsp;<span class="sign">€</span></p>
     </div>
 
-    <div class="card" onclick="copyToClipboard('#trademark')">
-        <p class="example"><span id="trademark" class="sign">™</span></p>
+    <div class="card" data-value="…">
+      <p class="example">ла<span class="sign">…</span></p>
     </div>
 
-    <div class="card" onclick="copyToClipboard('#registered-trademark')">
-        <p class="example"><span id="registered-trademark" class="sign">®</span></p>
+    <div class="card" data-value="§">
+      <p class="example"><span class="sign">§</span>&nbsp;2.</p>
     </div>
 
-</body>
+    <div class="card" data-value="©">
+      <p class="example"><span class="sign">©</span>&nbsp;All</p>
+    </div>
+
+    <div class="card" data-value="™">
+      <p class="example">
+        <span class="sign">™</span>
+     </p>
+    </div>
+
+    <div class="card" data-value="®">
+      <p class="example">
+        <span class="sign">®</span>
+      </p>
+    </div>
+
+    <script>
+      const cards = Array.from(document.querySelectorAll(".card"));
+
+      cards.forEach(function(card) {
+        const value = card.dataset.value;
+
+        card.addEventListener("click", function() {
+          copyToClipboard(value);
+
+          card.classList.add("feedback_anim");
+
+          setTimeout(() => {
+            card.classList.remove("feedback_anim");
+          }, 2000);
+        });
+      });
+
+      function copyToClipboard(value) {
+        const element = document.createElement("textarea");
+
+        element.value = value;
+        document.body.appendChild(element);
+        element.select();
+        document.execCommand("copy");
+        document.body.removeChild(element);
+      }
+    </script>
+  </body>
 </html>
