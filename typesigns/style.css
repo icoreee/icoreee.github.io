@@ -35,16 +35,16 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all .2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    user-select: none;
 }
 .card:hover {
     background-color: #F2F2F6;
 }
 .card:active {
-    background-color: #ECECF4;
-    animation-name: feedback;
-    animation-duration: 1s;
-}
+    transform: scale(.98);
+    transition: transform .1s ease-in-out;
+} 
 .example {
     font-family: 'PT Serif', serif;
     font-size: 16rem;
@@ -72,12 +72,20 @@ h1 {
     text-align: center;
     animation: feedback 5s infinite;
 } */
-.feedback_anim{
-    animation: feedback 2s;
+/* .feedback_anim{
+    animation: feedback .2s;
 }
 
 @keyframes feedback {
-    0%   { transform: scale(1)}
-    50%  { transform: scale(.7)}
-    100% { transform: scale(1) }
-  }
+    0%   {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+    50%  {
+        transform: scale(.98);
+        animation-timing-function: ease-in;
+    }
+    100% {
+        transform: scale(1);
+    }
+  } */
