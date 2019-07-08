@@ -4,7 +4,7 @@ html {
 body {
     margin: 0 5rem 5rem 5rem;
     display: grid;
-    grid-template-rows:    11rem repeat(4, 36rem);
+    grid-template-rows:    11rem repeat(5, 36rem);
     grid-template-columns: repeat(5, 58rem);
     grid-gap: 5rem 5rem;
 }
