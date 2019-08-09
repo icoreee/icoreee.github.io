@@ -1,0 +1,80 @@
+body {
+    font-family: Inter;
+    padding: 24px;
+    font-feature-settings: 'tnum' 1;
+}
+div {
+    background-color: #E0FCFE;
+    margin: 8px;
+    width: fit-content;
+}
+.h01 {
+    font-size: 11px;
+    line-height: 16px;
+}
+
+.h02 {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.h03 {
+    font-size: 16px;
+    line-height: 24px;    
+}
+
+.h04 {
+    font-size: 19px;
+    line-height: 24px;
+}
+
+.h05 {
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.h06 {
+    font-size: 25px;
+    line-height: 32px;
+}
+
+.h07 {
+    font-size: 27px;
+    line-height: 36px;    
+}
+
+.h08 {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.h09 {
+    font-size: 33px;
+    line-height: 44px;    
+}
+
+.h10 {
+    font-size: 36px;
+    line-height: 48px;    
+}
+
+.h11 {
+    font-size: 38px;
+    line-height: 48px;    
+}
+
+.h12 {
+    font-size: 41px;
+    line-height: 52px;    
+}
+
+.h13 {
+    font-size: 44px;
+    line-height: 56px;    
+}
+
+.h14 {
+    font-size: 47px;
+    line-height: 60px;    
+}
+
