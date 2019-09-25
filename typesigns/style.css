@@ -46,6 +46,7 @@ h1 {
     transition: transform .1s ease-in-out;
 } 
 .example {
+    display: inherit;
     font-family: 'PT Serif', serif;
     font-size: 16rem;
     line-height: 18rem;
