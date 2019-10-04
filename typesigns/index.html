@@ -16,113 +16,113 @@
       <span>Здесь когда-нибудь будет поиск</span>
     </div>
 
-    <div class="card" data-value="—">
+    <div class="card copy" data-value="—">
       <p class="example">раз <span class="sign">—</span> раз</p>
     </div>
 
-    <div class="card" data-value="–">
+    <div class="card copy" data-value="–">
       <p class="example">92<span class="sign">–</span>94</p>
     </div>
 
-    <div class="card spaces" data-value=" ">
+    <div class="card copy spaces" data-value=" ">
       <p class="example">раз<span class="sign">&emsp;</span>раз</p>
     </div>
 
-    <div class="card spaces" data-value=" ">
+    <div class="card copy spaces" data-value=" ">
       <p class="example">раз<span class="sign">&ensp;</span>раз</p>
     </div>
 
-    <div class="card spaces" data-value=" ">
+    <div class="card copy spaces" data-value=" ">
       <p class="example">раз<span class="sign">&thinsp;</span>раз</p>
     </div>
 
-    <div class="card" data-value="«»">
+    <div class="card copy" data-value="«»">
       <p class="example"><span class="sign">«</span>раз<span class="sign">»</span></span></p>
     </div>
 
-    <div class="card" data-value="„“">
+    <div class="card copy" data-value="„“">
       <p class="example"><span class="sign">„</span>раз<span class="sign">“</span></p>
     </div>
 
-    <div class="card" data-value="“”">
+    <div class="card copy" data-value="“”">
       <p class="example">
         <span class="sign">“</span>wow<span class="sign">”</span>
       </p>
     </div>
 
-    <div class="card" data-value="‘’">
+    <div class="card copy" data-value="‘’">
       <p class="example">
         <span class="sign">‘</span>wow<span class="sign">’</span>
       </p>
     </div>
 
-    <div class="card" data-value="₽">
+    <div class="card copy" data-value="₽">
       <p class="example">10&thinsp;<span class="sign">₽</span></p>
     </div>
 
-    <div class="card" data-value="·">
+    <div class="card copy" data-value="·">
       <p class="example">раз&nbsp;<span class="sign">·</span>&nbsp;раз</p>
     </div>
 
-    <div class="card" data-value="•">
+    <div class="card copy" data-value="•">
       <p class="example"><span class="sign">•</span>&nbsp;пу</p>
     </div>
 
-    <div class="card" data-value="−">
+    <div class="card copy" data-value="−">
       <p class="example">8&thinsp;<span class="sign">−</span>&thinsp;4</p>
     </div>
 
-    <div class="card" data-value="×">
+    <div class="card copy" data-value="×">
       <p class="example">2&thinsp;<span class="sign">×</span>&thinsp;2</p>
     </div>
 
-    <div class="card" data-value="€">
+    <div class="card copy" data-value="€">
       <p class="example">10&thinsp;<span class="sign">€</span></p>
     </div>
 
-    <div class="card" data-value="…">
+    <div class="card copy" data-value="…">
       <p class="example">ла<span class="sign">…</span></p>
     </div>
 
-    <div class="card" data-value="§">
+    <div class="card copy" data-value="§">
       <p class="example"><span class="sign">§</span>&nbsp;2.</p>
     </div>
 
-    <div class="card" data-value="©">
+    <div class="card copy" data-value="©">
       <p class="example"><span class="sign">©</span>&nbsp;All</p>
     </div>
 
-    <div class="card" data-value="™">
+    <div class="card copy" data-value="™">
       <p class="example">
         <span class="sign">™</span>
       </p>
     </div>
 
-    <div class="card" data-value="®">
+    <div class="card copy" data-value="®">
       <p class="example">
         <span class="sign">®</span>
       </p>
     </div>
 
-    <div class="card" data-value="✓">
+    <div class="card copy" data-value="✓">
       <p class="example">
         <span class="sign">✓</span>
       </p>
     </div>
 
-    <div class="card" data-value="★">
+    <div class="card copy" data-value="★">
       <p class="example">
         <span class="sign">★</span>
       </p>
     </div>
 
-    <div class="card" data-value="→">
+    <div class="card copy" data-value="→">
       <p class="example">
         <span class="sign">→</span>
       </p>
     </div>
 
-    <div class="card" data-value="←">
+    <div class="card copy" data-value="←">
       <p class="example">
         <span class="sign">←</span>
       </p>
@@ -136,12 +136,22 @@
 
         card.addEventListener("click", function() {
           copyToClipboard(value);
+          
+          card.classList.remove("copy");
+          card.classList.add("copied");
+          
+          // card.classList.add("feedback_anim");
 
-          card.classList.add("feedback_anim");
+          // setTimeout(() => {
+          //   card.classList.remove("feedback_anim");
+          // }, 200);
+        });
 
-          setTimeout(() => {
-            card.classList.remove("feedback_anim");
-          }, 200);
+        card.addEventListener("mouseleave", function() {
+
+          card.classList.remove("copied");
+          card.classList.add("copy");
+
         });
       });
 
