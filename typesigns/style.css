@@ -61,11 +61,11 @@ h1 {
 }
 
 .copy {
-    cursor: url(copy.svg) 27 6, auto;
+    cursor: url(copy.svg) 27 6, pointer;
 }
 
 .copied {
-    cursor: url(copied.svg) 39 6, auto;
+    cursor: url(copied.svg) 39 6, pointer;
 }
 
 /* .card:active {
