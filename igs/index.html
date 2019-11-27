@@ -1,0 +1,49 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>IGS</title>
+  </head>
+
+  <body>
+    <div class="input-wrapper">
+      <input
+        type="file"
+        accept="image/*"
+        onchange="loadFile(event)"
+        id="fileInput"
+      />
+      <label for="fileInput" class="input-label"
+        >Drag & Drop <br /><span class="itallic">or</span><br />
+        Select Image</label
+      >
+    </div>
+
+    <div id="i5-wrapper" class="i5-wrapper hide">
+      <h2>iPhone 5, 5S, 5C, SE</h2>
+      <img src="img/i5-ui.png" alt="" id="i5" class="ui-overlay" />
+    </div>
+
+    <div id="i6-wrapper" class="i6-wrapper hide">
+      <h2>iPhone 6, 6S, 7, 8</h2>
+      <img src="img/i6-ui.png" alt="" id="i6" class="ui-overlay" />
+    </div>
+
+    <script>
+      let loadFile = function(event) {
+        let output = document.getElementById("output");
+
+        i5.style.backgroundImage =
+          "url('" + URL.createObjectURL(event.target.files[0]) + "')";
+
+        i6.style.backgroundImage =
+          "url('" + URL.createObjectURL(event.target.files[0]) + "')";
+
+        document.getElementById("i5-wrapper").classList.remove("hide");
+        document.getElementById("i6-wrapper").classList.remove("hide");
+      };
+    </script>
+  </body>
+</html>

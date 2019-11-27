@@ -1,0 +1,69 @@
+body {
+  display: flex;
+  margin: auto;
+  font-size: 16px;
+  transition: all 500ms;
+}
+
+.input-wrapper,
+.i5-wrapper,
+.i6-wrapper {
+  flex-grow: 1;
+}
+
+.i5-wrapper,
+.i6-wrapper {
+  padding: 24px 32px;
+}
+.i5-wrapper h2,
+.i6-wrapper h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.input-wrapper {
+  background-color: #f0f0ef;
+}
+
+#fileInput {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  /* overflow: hidden; */
+  /* position: absolute; */
+  /* z-index: -1; */
+}
+
+.input-label {
+  position: absolute;
+  top: 24px;
+  left: 32px;
+  font-size: 1.625em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.itallic {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+}
+
+#i5 {
+  width: 320px;
+  height: 568px;
+}
+
+#i6 {
+  width: 375px;
+  height: 667px;
+}
+
+.ui-overlay {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hide {
+  display: none;
+}
