@@ -37,6 +37,7 @@ body {
 }
 
 .input-label {
+  cursor: pointer;
   position: absolute;
   top: 24px;
   left: 32px;
