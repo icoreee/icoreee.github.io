@@ -47,6 +47,10 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+.input-label:hover {
+  color: rgba(0, 0, 0, .65);
+}
+
 .itallic {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-style: italic;
