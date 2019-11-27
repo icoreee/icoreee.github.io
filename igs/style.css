@@ -24,7 +24,6 @@ body {
 
 .input-wrapper {
   background-color: #f0f0ef;
-  cursor: pointer;
 }
 
 #fileInput {
@@ -37,6 +36,7 @@ body {
 }
 
 .input-label {
+  cursor: pointer;
   position: absolute;
   top: 24px;
   left: 32px;
