@@ -36,9 +36,13 @@
       <img src="img/i6plus-ui.png" alt="" id="i6plus" class="ui-overlay" />
     </div>
 
+    <div id="ixr-wrapper" class="ixr-wrapper hide">
+      <h2>iPhone XR, XS Max, 11, 11 Pro Max</h2>
+      <img src="img/ixr-ui.png" alt="" id="ixr" class="ui-overlay" />
+    </div>
+
     <script>
       let loadFile = function(event) {
-
         i5.style.backgroundImage =
           "url('" + URL.createObjectURL(event.target.files[0]) + "')";
 
@@ -48,9 +52,13 @@
         i6plus.style.backgroundImage =
           "url('" + URL.createObjectURL(event.target.files[0]) + "')";
 
+        ixr.style.backgroundImage =
+          "url('" + URL.createObjectURL(event.target.files[0]) + "')";
+
         document.getElementById("i5-wrapper").classList.remove("hide");
         document.getElementById("i6-wrapper").classList.remove("hide");
         document.getElementById("i6plus-wrapper").classList.remove("hide");
+        document.getElementById("ixr-wrapper").classList.remove("hide");
       };
     </script>
   </body>

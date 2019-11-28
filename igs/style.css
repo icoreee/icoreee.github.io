@@ -1,25 +1,30 @@
 body {
-  display: flex;
+  display: grid;
+  grid-template-columns: 20% auto auto auto auto;
+  height: 100%;
   margin: auto;
   font-size: 16px;
   transition: all 500ms;
 }
 
-/* .input-wrapper,
+.input-wrapper,
 .i5-wrapper,
 .i6-wrapper,
 .i6plus-wrapper {
-  flex-grow: 1;
-} */
+  /* flex-grow: 1; */
+  /* width: 33%; */
+}
 
 .i5-wrapper,
 .i6-wrapper,
-.i6plus-wrapper {
+.i6plus-wrapper,
+.ixr-wrapper {
   padding: 24px 32px;
 }
 .i5-wrapper h2,
 .i6-wrapper h2,
-.i6plus-wrapper h2 {
+.i6plus-wrapper h2,
+.ixr-wrapper h2 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1em;
   font-weight: 400;
@@ -48,7 +53,7 @@ body {
 }
 
 .input-label:hover {
-  color: rgba(0, 0, 0, .65);
+  color: rgba(0, 0, 0, 0.65);
 }
 
 .itallic {
@@ -69,6 +74,11 @@ body {
 #i6plus {
   width: 414px;
   height: 736px;
+}
+
+#ixr {
+  width: 414px;
+  height: 896px;
 }
 
 .ui-overlay {
