@@ -1,6 +1,5 @@
 body {
   display: grid;
-  grid-template-columns: 20% auto auto auto auto;
   height: 100%;
   margin: auto;
   font-size: 16px;
@@ -80,4 +79,8 @@ body {
 
 .hide {
   display: none;
+}
+
+.grid {
+  grid-template-columns: 20% auto auto auto auto;
 }
