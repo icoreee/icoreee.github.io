@@ -7,24 +7,10 @@ body {
   transition: all 500ms;
 }
 
-.input-wrapper,
-.i5-wrapper,
-.i6-wrapper,
-.i6plus-wrapper {
-  /* flex-grow: 1; */
-  /* width: 33%; */
-}
-
-.i5-wrapper,
-.i6-wrapper,
-.i6plus-wrapper,
-.ixr-wrapper {
+.device {
   padding: 24px 32px;
 }
-.i5-wrapper h2,
-.i6-wrapper h2,
-.i6plus-wrapper h2,
-.ixr-wrapper h2 {
+.device h2 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1em;
   font-weight: 400;
@@ -85,6 +71,11 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+#ixr-wrapper .ui-overlay {
+  background-size: contain;
+  background-position: center 44px;
 }
 
 .hide {
