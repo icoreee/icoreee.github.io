@@ -36,6 +36,11 @@
       <img src="img/i6plus-ui.png" alt="" id="i6plus" class="ui-overlay" />
     </div>
 
+    <div id="ix-wrapper" class="device hide">
+      <h2>iPhone X, XS, 11 Pro</h2>
+      <img src="img/ix-ui.png" alt="" id="ix" class="ui-overlay" />
+    </div>
+
     <div id="ixr-wrapper" class="device hide">
       <h2>iPhone XR, XS Max, 11, 11 Pro Max</h2>
       <img src="img/ixr-ui.png" alt="" id="ixr" class="ui-overlay" />
@@ -52,12 +57,16 @@
         i6plus.style.backgroundImage =
           "url('" + URL.createObjectURL(event.target.files[0]) + "')";
 
+        ix.style.backgroundImage =
+          "url('" + URL.createObjectURL(event.target.files[0]) + "')";
+
         ixr.style.backgroundImage =
           "url('" + URL.createObjectURL(event.target.files[0]) + "')";
 
         document.getElementById("i5-wrapper").classList.remove("hide");
         document.getElementById("i6-wrapper").classList.remove("hide");
         document.getElementById("i6plus-wrapper").classList.remove("hide");
+        document.getElementById("ix-wrapper").classList.remove("hide");
         document.getElementById("ixr-wrapper").classList.remove("hide");
         document.body.classList.add("grid");
       };

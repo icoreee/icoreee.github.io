@@ -7,7 +7,7 @@ body {
 }
 
 .device {
-  padding: 24px 32px;
+  padding: 12px 0 0 36px;
 }
 .device h2 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -61,6 +61,11 @@ body {
   height: 736px;
 }
 
+#ix {
+  width: 375px;
+  height: 812px;
+}
+
 #ixr {
   width: 414px;
   height: 896px;
@@ -72,7 +77,8 @@ body {
   background-position: center;
 }
 
-#ixr-wrapper .ui-overlay {
+#ixr-wrapper .ui-overlay,
+#ix-wrapper .ui-overlay {
   background-size: contain;
   background-position: center 44px;
 }
@@ -82,5 +88,5 @@ body {
 }
 
 .grid {
-  grid-template-columns: 20% auto auto auto auto;
+  grid-template-columns: 20% auto auto auto auto auto;
 }
