@@ -1,22 +1,19 @@
 body {
-  display: flex;
+  display: grid;
+  height: 100%;
   margin: auto;
   font-size: 16px;
   transition: all 500ms;
 }
 
-.input-wrapper,
-.i5-wrapper,
-.i6-wrapper {
-  flex-grow: 1;
+.devices-wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-column-gap: 36px;
+  padding: 12px 36px 0 36px;
 }
 
-.i5-wrapper,
-.i6-wrapper {
-  padding: 24px 32px;
-}
-.i5-wrapper h2,
-.i6-wrapper h2 {
+.device h2 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1em;
   font-weight: 400;
@@ -45,7 +42,7 @@ body {
 }
 
 .input-label:hover {
-  color: rgba(0, 0, 0, .65);
+  color: rgba(0, 0, 0, 0.65);
 }
 
 .itallic {
@@ -63,12 +60,37 @@ body {
   height: 667px;
 }
 
+#i6plus {
+  width: 414px;
+  height: 736px;
+}
+
+#ix {
+  width: 375px;
+  height: 812px;
+}
+
+#ixr {
+  width: 414px;
+  height: 896px;
+}
+
 .ui-overlay {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
+#ixr-wrapper .ui-overlay,
+#ix-wrapper .ui-overlay {
+  background-size: contain;
+  background-position: center 44px;
+}
+
 .hide {
   display: none;
+}
+
+.grid {
+  grid-template-columns: 20% auto;
 }
