@@ -6,9 +6,13 @@ body {
   transition: all 500ms;
 }
 
-.device {
-  padding: 12px 0 0 36px;
+.devices-wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-column-gap: 36px;
+  padding: 12px 36px 0 36px;
 }
+
 .device h2 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1em;
@@ -88,5 +92,5 @@ body {
 }
 
 .grid {
-  grid-template-columns: 20% auto auto auto auto auto;
+  grid-template-columns: 20% auto;
 }

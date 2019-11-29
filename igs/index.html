@@ -21,29 +21,31 @@
       >
     </div>
 
-    <div id="i5-wrapper" class="device hide">
-      <h2>iPhone 5, 5S, 5C, SE</h2>
-      <img src="img/i5-ui.png" alt="" id="i5" class="ui-overlay" />
-    </div>
+    <div id="devices-wrapper" class="devices-wrapper hide">
+      <div id="i5-wrapper" class="device">
+        <h2>iPhone 5, 5S, 5C, SE</h2>
+        <img src="img/i5-ui.png" alt="" id="i5" class="ui-overlay" />
+      </div>
 
-    <div id="i6-wrapper" class="device hide">
-      <h2>iPhone 6, 6S, 7, 8</h2>
-      <img src="img/i6-ui.png" alt="" id="i6" class="ui-overlay" />
-    </div>
+      <div id="i6-wrapper" class="device">
+        <h2>iPhone 6, 6S, 7, 8</h2>
+        <img src="img/i6-ui.png" alt="" id="i6" class="ui-overlay" />
+      </div>
 
-    <div id="i6plus-wrapper" class="device hide">
-      <h2>iPhone 6+, 6S+, 7+, 8+</h2>
-      <img src="img/i6plus-ui.png" alt="" id="i6plus" class="ui-overlay" />
-    </div>
+      <div id="i6plus-wrapper" class="device">
+        <h2>iPhone 6+, 6S+, 7+, 8+</h2>
+        <img src="img/i6plus-ui.png" alt="" id="i6plus" class="ui-overlay" />
+      </div>
 
-    <div id="ix-wrapper" class="device hide">
-      <h2>iPhone X, XS, 11 Pro</h2>
-      <img src="img/ix-ui.png" alt="" id="ix" class="ui-overlay" />
-    </div>
+      <div id="ix-wrapper" class="device">
+        <h2>iPhone X, XS, 11 Pro</h2>
+        <img src="img/ix-ui.png" alt="" id="ix" class="ui-overlay" />
+      </div>
 
-    <div id="ixr-wrapper" class="device hide">
-      <h2>iPhone XR, XS Max, 11, 11 Pro Max</h2>
-      <img src="img/ixr-ui.png" alt="" id="ixr" class="ui-overlay" />
+      <div id="ixr-wrapper" class="device">
+        <h2>iPhone XR, XS Max, 11, 11 Pro Max</h2>
+        <img src="img/ixr-ui.png" alt="" id="ixr" class="ui-overlay" />
+      </div>
     </div>
 
     <script>
@@ -63,11 +65,8 @@
         ixr.style.backgroundImage =
           "url('" + URL.createObjectURL(event.target.files[0]) + "')";
 
-        document.getElementById("i5-wrapper").classList.remove("hide");
-        document.getElementById("i6-wrapper").classList.remove("hide");
-        document.getElementById("i6plus-wrapper").classList.remove("hide");
-        document.getElementById("ix-wrapper").classList.remove("hide");
-        document.getElementById("ixr-wrapper").classList.remove("hide");
+        document.getElementById("devices-wrapper").classList.remove("hide");
+
         document.body.classList.add("grid");
       };
     </script>
