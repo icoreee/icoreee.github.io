@@ -72,8 +72,8 @@
 
       let shift = 0;
 
-      window.addEventListener("wheel", function(e) {
-        if (e.deltaY > 0) {
+      window.addEventListener("wheel", function(event) {
+        if (event.deltaY > 0) {
           shift += 50;
           window.scrollTo(shift, 0);
         } else {
