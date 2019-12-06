@@ -50,26 +50,19 @@
 
     <script>
       function loadFile(event) {
-        i5.style.backgroundImage =
-          "url('" + URL.createObjectURL(event.target.files[0]) + "')";
-
-        i6.style.backgroundImage =
-          "url('" + URL.createObjectURL(event.target.files[0]) + "')";
-
-        i6plus.style.backgroundImage =
-          "url('" + URL.createObjectURL(event.target.files[0]) + "')";
-
-        ix.style.backgroundImage =
-          "url('" + URL.createObjectURL(event.target.files[0]) + "')";
-
-        ixr.style.backgroundImage =
-          "url('" + URL.createObjectURL(event.target.files[0]) + "')";
-
         document.getElementById("devices-wrapper").classList.remove("hide");
 
         document.body.classList.add("grid");
+
+        const devices = Array.from(document.querySelectorAll(".ui-overlay"));
+
+        devices.forEach(function(device) {
+          device.style.backgroundImage =
+            "url('" + URL.createObjectURL(event.target.files[0]) + "')";
+        });
       }
 
+      // Assign mousewheel to horizontal scroll
       window.addEventListener("wheel", function(event) {
         if (event.deltaY > 0) {
           window.scrollBy(event.deltaY, 0);
