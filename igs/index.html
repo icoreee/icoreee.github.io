@@ -82,9 +82,6 @@
         const devices = Array.from(document.querySelectorAll(".ui-overlay"));
 
         devices.forEach(function(device) {
-          // device.style.backgroundImage =
-          //   "url('" + URL.createObjectURL(event.target.files[0]) + "')";
-
           device.style.backgroundImage = `url('${URL.createObjectURL(
             event.target.files[0]
           )}')`;
