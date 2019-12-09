@@ -84,8 +84,15 @@ body {
 #ixr-wrapper .ui-overlay,
 #ix-wrapper .ui-overlay {
   background-size: contain;
-  background-position: center 44px;
   background-color: black;
+}
+
+#ixr-wrapper .ui-overlay {
+  background-position: center 44px;
+}
+
+#ix-wrapper .ui-overlay {
+  background-position: center 36px;
 }
 
 .hide {
