@@ -75,17 +75,14 @@
 
     <script>
       function loadFile(event) {
-        document.getElementById("devices-wrapper").classList.remove("hide");
-
-        document.body.classList.add("grid");
-
         let userImage = URL.createObjectURL(event.target.files[0]);
-
         const devices = Array.from(document.querySelectorAll(".ui-overlay"));
-
         devices.forEach(function(device) {
           device.style.backgroundImage = `url('${userImage}')`;
         });
+
+        document.getElementById("devices-wrapper").classList.remove("hide");
+        document.body.classList.add("grid");
       }
 
       // Assign mousewheel to horizontal scroll
