@@ -13,15 +13,15 @@
         type="file"
         accept="image/*"
         onchange="loadFile(event)"
-        id="fileInput"
+        id="input"
       />
-      <label for="fileInput" class="input-label"
+      <label for="input" class="input-label"
         >Drag & Drop <br /><span class="itallic">or</span><br />
         Select Image</label
       >
     </div>
 
-    <div id="devices-wrapper" class="devices-wrapper hide">
+    <div id="devices-wrapper" class="devices-wrapper">
       <div id="i5-wrapper" class="device">
         <h2>iPhone 5, 5S, 5C, SE</h2>
         <img
@@ -77,22 +77,22 @@
       function loadFile(event) {
         let userImage = URL.createObjectURL(event.target.files[0]);
         const devices = Array.from(document.querySelectorAll(".ui-overlay"));
-        devices.forEach(function(device) {
+        devices.forEach(device => {
           device.style.backgroundImage = `url('${userImage}')`;
         });
 
-        document.getElementById("devices-wrapper").classList.remove("hide");
+        document.getElementById("devices-wrapper").classList.add("grid");
         document.body.classList.add("grid");
       }
 
       // Assign mousewheel to horizontal scroll
-      window.addEventListener("wheel", function(event) {
+      window.addEventListener("wheel", event => {
         if (event.deltaY > 0) {
           window.scrollBy(event.deltaY, 0);
         } else {
-          window.scrollBy(event.deltaY, 0);
+          window.scrollBy(event.deltaY, 0); 
         }
       });
     </script>
   </body>
-</html>
+</html> 
