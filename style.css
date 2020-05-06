@@ -1,233 +1,167 @@
+/* Fonts */
+
 @font-face {
-  font-family: 'Muller-Regular';
-  src: url('fonts/Muller-Regular.eot'); /* IE9 Compat Modes */
-  src: url('fonts/Muller-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/Muller-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/Muller-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('fonts/Muller-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-family: "Golos";
+  src: url("Golos%20Text_VF.eot");
+  src: url("Golos%20Text_VF.eot?#iefix") format("embedded-opentype"),
+    url("Golos%20Text_VF.woff2") format("woff2"),
+    url("Golos%20Text_VF.woff") format("woff"),
+    url("Golos%20Text_VF.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+/* Reset */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, picture, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+picture,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  font: inherit;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+
+/* Main page */
+
 body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  margin: 0;
+  font-family: Golos, sans-serif;
+  font-size: 16px;
 }
 
-body{
-  font-family: 'Muller-Regular', sans-serif;
-  background-color: #fffffd;
-}
-.wrap{
-  height: calc(100vh - 3px);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding-left: 33px;
-}
-.name, .footer{
-  color: #0006ff;
-  font-size: 25px;
-  display: block;
-}
-.name{
-  margin-top: 28px;
-}
-.footer{
-  margin-bottom: 28px;
+.main-page {
+  padding: 1.5rem 0 0 1.5rem;
 }
 
-.projects{
-  font-size: 30px;
-  line-height: 1.5;
+h1,
+h2,
+a {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
 }
-.projects div{
-  display: block;
-  margin-bottom: -8px;
+
+h2 {
+  font-variation-settings: "wght" 700;
+  margin-top: 2.25rem;
 }
-.projects a{
+
+a {
   text-decoration: none;
-  display: inline-block;
-  height: 58px;
-}
-.project-name{
-  border-bottom: 1px rgba(153,153,153, 0.33) solid;
-  color: #404040;
-  transition: all .4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-}
-.project-name:hover{
-  color: #000;
-  border-bottom-color: rgba(153,153,153, 1);
-}
-.case{
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  left: 35%;
-  top: 0%;
-  height: 100vh;
-  width: 65vw;
-  /*display: flex;
-  flex-direction: column;
-  justify-content: center;*/
-  background-color: #f9f9f7;
-  visibility: hidden;
-  transition: all .2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-}
-.project-preview-wrap{
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.project-logo, .project-preview{
-  margin: 0 auto;
+  color: #0303fe;
   display: block;
-  max-width: 100%;
-  max-height: 100%;
-}
-#universes .project-logo{
-  margin-bottom: 22px;
-  padding-top: 32px;
-}
-#thebatya .project-logo{
-  margin-bottom: 7px;
-  padding-top: 29px;
-}
-#olgamonina .project-logo{
-  margin-bottom: 21px;
-  padding-top: 37px;
-}
-#cheapgames .project-logo{
-  margin-bottom: 12px;
-  padding-top: 37px;
-}
-.project-about{
-  color: #000;
-  font-size: 20px;
-  display: block;
-  text-align: center;
-}
-.about-wrap{
-  text-align: center;
-  background-color: #f9f9f7;
-  position: absolute;
-  left: 35%;
-  top: 0%;
-  height: 100vh;
-  width: 65vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow: hidden;
-}
-.about{
-  margin-top: 10%;
-}
-.about-photo{
-  margin: 0 auto 45px;
-  display: block;
-  transform: rotate(-1deg);
-  box-shadow: 0px 16px 48px 0px rgba(128, 128, 128, 0.33);
-}
-.category{
-  display: block;
-  color: #999999;
-  text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: 0.6px;
-  line-height: 26px;
-  margin-top: 34px;
-}
-.items{
-  font-size: 24px;
-  line-height: 35px;
-}
-.contacts{
-  display: flex;
-  flex-direction: row;
-  font-size: 24px;
-  padding-bottom: 31px;
-}
-.phone, .mail{
-  display: inline-block;
-  flex-grow: 1;
-}
-.phone{
-  text-align: left;
-  padding-left: 33px;
-}
-.mail{
-  text-align: right;
-  padding-right: 33px;
+  font-variation-settings: "wght" 100;
+  transition: font-variation-settings 150ms ease-out;
 }
 
-.close{
+a:hover {
+  font-variation-settings: "wght" 700;
+}
+
+/* Works pages */
+
+.close {
   position: fixed;
   left: 97%;
   top: 1%;
   text-decoration: none;
   opacity: 0.5;
   font-size: 60px;
-  transition: all .2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
-.close:hover{
+.close:hover {
   opacity: 1;
 }
-.universes-wrap .close{
+.universes-wrap .close {
   color: #000;
 }
-.thebatya-wrap .close, .olgamonina-wrap .close, .cheapgames-wrap .close{
+.thebatya-wrap .close,
+.olgamonina-wrap .close,
+.cheapgames-wrap .close {
   color: #fff;
 }
-.case-image{
+.case-image {
   display: block;
   margin: 0 auto;
 }
-.universes-wrap{
+.universes-wrap {
   margin: 0 auto;
   height: 7430px;
   background-image: url(img/universes-case-1920.png);
@@ -236,12 +170,12 @@ body{
   background-color: #f5f5f5;
 }
 @media screen and (max-width: 1400px) {
-  .universes-wrap{
+  .universes-wrap {
     background-image: url(img/universes-case-1400.png);
     background-size: contain;
   }
 }
-.thebatya-wrap{
+.thebatya-wrap {
   margin: 0 auto;
   height: 7490px;
   background-image: url(img/thebatya-case-1920.png);
@@ -250,12 +184,12 @@ body{
   background-color: #030404;
 }
 @media screen and (max-width: 1400px) {
-  .thebatya-wrap{
+  .thebatya-wrap {
     background-image: url(img/thebatya-case-1400.png);
     background-size: contain;
   }
 }
-.olgamonina-wrap{
+.olgamonina-wrap {
   margin: 0 auto;
   height: 2280px;
   background-image: url(img/olgamonina-case-1920.png);
@@ -264,12 +198,12 @@ body{
   background-color: #181818;
 }
 @media screen and (max-width: 1400px) {
-  .olgamonina-wrap{
+  .olgamonina-wrap {
     background-image: url(img/olgamonina-case-1400.png);
     background-size: contain;
   }
 }
-.cheapgames-wrap{
+.cheapgames-wrap {
   margin: 0 auto;
   height: 3150px;
   background-image: url(img/cheapgames-case-1920.png);
@@ -278,8 +212,43 @@ body{
   background-color: #181818;
 }
 @media screen and (max-width: 1400px) {
-  .cheapgames-wrap{
+  .cheapgames-wrap {
     background-image: url(img/cheapgames-case-1400.png);
     background-size: contain;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 32px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    font-size: 28px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 24px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: 16px;
   }
 }
