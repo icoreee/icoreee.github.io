@@ -1,14 +1,22 @@
 /* Fonts */
 
 @font-face {
+  font-family: "Golos VF";
+  src: url("fonts/golos_text_vf.woff2") format("woff2-variations"),
+    url("fonts/golos_text_vf.woff2") format("woff2");
+  font-weight: 400 700;
+}
+
+@font-face {
   font-family: "Golos";
-  src: url("Golos%20Text_VF.eot");
-  src: url("Golos%20Text_VF.eot?#iefix") format("embedded-opentype"),
-    url("Golos%20Text_VF.woff2") format("woff2"),
-    url("Golos%20Text_VF.woff") format("woff"),
-    url("Golos%20Text_VF.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+  src: url("fonts/golos_text_regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Golos";
+  src: url("fonts/golos_text_bold.woff2") format("woff2");
+  font-weight: 700;
 }
 
 /* Reset */
@@ -103,8 +111,14 @@ video {
 
 body {
   margin: 0;
-  font-family: Golos, sans-serif;
+  font-family: "Golos", serif;
   font-size: 16px;
+}
+
+@supports (font-variation-settings: normal) {
+  body {
+    font-family: "Golos VF", sans-serif;
+  }
 }
 
 .main-page {
@@ -121,7 +135,6 @@ a {
 h2 {
   font-variation-settings: "wght" 700;
   margin-top: 2.25rem;
-  font-weight: 700;
 }
 
 a {
