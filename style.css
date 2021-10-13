@@ -64,13 +64,16 @@ h2 {
 a {
   text-decoration: none;
   color: #0303fe;
-  display: block;
   font-variation-settings: "wght" 400;
   transition: font-variation-settings 150ms ease-out;
 }
 
 a:hover {
   font-variation-settings: "wght" 700;
+}
+
+.main-page > a {
+  display: block;
 }
 
 /* Works pages */
