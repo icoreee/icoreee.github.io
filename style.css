@@ -1,22 +1,8 @@
-/* Fonts */
+:root {
+  --content-width: 1200px;
+  --ws-width: 1368px;
 
-@font-face {
-  font-family: "Golos VF";
-  src: url("fonts/golos_text_vf.woff2") format("woff2-variations"),
-    url("fonts/golos_text_vf.woff2") format("woff2");
-  font-weight: 400 700;
-}
-
-@font-face {
-  font-family: "Golos";
-  src: url("fonts/golos_text_regular.woff2") format("woff2");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Golos";
-  src: url("fonts/golos_text_bold.woff2") format("woff2");
-  font-weight: 700;
+  --accent: #000aff;
 }
 
 /* Reset */
@@ -31,165 +17,52 @@ a {
   font: inherit;
 }
 
-/* Main page */
+a {
+  text-decoration: none;
+  color: var(--accent);
+}
 
 body {
-  margin: 0;
-  font-family: "Golos", serif;
-  font-size: 16px;
-}
-
-@supports (font-variation-settings: normal) {
-  body {
-    font-family: "Golos VF", sans-serif;
-  }
-}
-
-.main-page {
-  padding: 1.25rem;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  background-color: #f7fafa;
 }
 
 h1,
 h2,
-a {
-  font-size: 1.5rem;
-  line-height: 2.25rem;
+h3,
+h4 {
+  font-weight: 700;
 }
 
-h2 {
-  font-variation-settings: "wght" 700;
-  margin-top: 2.25rem;
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: var(--content-width);
+  margin: auto;
+  padding: 56px 0;
+}
+.content > * {
+  margin-bottom: 60px;
 }
 
-a {
-  text-decoration: none;
-  color: #0303fe;
-  font-variation-settings: "wght" 400;
-  transition: font-variation-settings 150ms ease-out;
+header {
+  flex-grow: 1;
 }
 
-a:hover {
-  font-variation-settings: "wght" 700;
+.block {
+  width: 100%;
 }
 
-.main-page > a {
+.wide {
+  position: relative;
+  left: calc((var(--content-width) - var(--ws-width)) / 2);
+  width: var(--ws-width);
+}
+
+.block span {
   display: block;
-}
-
-/* Works pages */
-
-.close {
-  position: fixed;
-  left: 97%;
-  top: 1%;
-  text-decoration: none;
-  opacity: 0.5;
-  font-size: 60px;
-  transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-}
-.close:hover {
-  opacity: 1;
-}
-.universes-wrap .close {
-  color: #000;
-}
-.thebatya-wrap .close,
-.olgamonina-wrap .close,
-.cheapgames-wrap .close {
-  color: #fff;
-}
-.case-image {
-  display: block;
-  margin: 0 auto;
-}
-.universes-wrap {
-  margin: 0 auto;
-  height: 7430px;
-  background-image: url(img/universes-case-1920.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-color: #f5f5f5;
-}
-@media screen and (max-width: 1400px) {
-  .universes-wrap {
-    background-image: url(img/universes-case-1400.png);
-    background-size: contain;
-  }
-}
-.thebatya-wrap {
-  margin: 0 auto;
-  height: 7490px;
-  background-image: url(img/thebatya-case-1920.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-color: #030404;
-}
-@media screen and (max-width: 1400px) {
-  .thebatya-wrap {
-    background-image: url(img/thebatya-case-1400.png);
-    background-size: contain;
-  }
-}
-.olgamonina-wrap {
-  margin: 0 auto;
-  height: 2280px;
-  background-image: url(img/olgamonina-case-1920.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-color: #181818;
-}
-@media screen and (max-width: 1400px) {
-  .olgamonina-wrap {
-    background-image: url(img/olgamonina-case-1400.png);
-    background-size: contain;
-  }
-}
-.cheapgames-wrap {
-  margin: 0 auto;
-  height: 3150px;
-  background-image: url(img/cheapgames-case-1920.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-color: #181818;
-}
-@media screen and (max-width: 1400px) {
-  .cheapgames-wrap {
-    background-image: url(img/cheapgames-case-1400.png);
-    background-size: contain;
-  }
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  body {
-    font-size: 32px;
-  }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  body {
-    font-size: 28px;
-  }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  body {
-    font-size: 24px;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  body {
-    font-size: 20px;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  body {
-    font-size: 16px;
-  }
+  margin-bottom: 12px;
 }
