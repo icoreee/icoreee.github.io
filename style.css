@@ -2,6 +2,20 @@
   --content-width: 1200px;
 }
 
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter", sans-serif;
+  }
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: "Regular";
+  src: url("./fonts/Inter.var.woff2") format("woff2");
+}
+
 /* Reset */
 
 html,
@@ -14,23 +28,44 @@ a {
   font: inherit;
 }
 
+html {
+  font-family: "Inter", sans-serif;
+}
+
 a {
   text-decoration: none;
-  color: var(--accent);
+  color: black;
+}
+a:visited {
+  color: black;
 }
 
 body {
-  font-family: "Inter", sans-serif;
   font-size: 24px;
   line-height: 36px;
-  background-color: #f7fafa;
+  background-color: var(--bg-color);
 }
 
-h1,
+h1 {
+  font-size: 156px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.022;
+}
+
 h2,
 h3,
 h4 {
   font-weight: 700;
+}
+
+.link {
+  color: var(--accent) !important;
+  transition: all 0.15s;
+}
+
+.link:hover {
+  opacity: 60%;
 }
 
 .content {
@@ -47,8 +82,6 @@ h4 {
 
 header {
   flex-grow: 1;
-  display: flex;
-  justify-content: space-between;
 }
 
 .block {
@@ -64,4 +97,27 @@ header {
 .block span {
   display: block;
   margin-bottom: 12px;
+}
+
+.row {
+  display: flex;
+  border-top: 1px solid rgba(33, 37, 41, 0.18);
+  padding: 12px 0;
+}
+
+.name {
+  flex: 2;
+}
+
+.type {
+  flex: 1;
+}
+
+.description {
+  flex: 4;
+}
+
+.year {
+  flex: 1;
+  text-align: right;
 }

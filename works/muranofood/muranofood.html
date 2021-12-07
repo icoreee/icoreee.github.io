@@ -64,40 +64,36 @@
     <title>Murano Food — Dmitry Frolov</title>
     <meta content="Сервис для заказа обедов в офис." name="description" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-
     <link rel="stylesheet" href="../../style.css" />
     <style>
       :root {
         --ws-width: 1368px;
         --accent: #000aff;
+        --bg-color: #f7fafa;
       }
     </style>
   </head>
   <body>
     <div class="content">
       <header>
-        <h2><a href="../../index.html">Dmitry Frolov / Murano Food</a></h2>
-        <a href="">Prototype</a>
+        <a href="../../index.html" class="link">Dmitry Frolov</a>
       </header>
 
       <div class="block">
-        <span
-          >У Мурано есть доставка обедов в офис. Каждый месяц сотрудникам
-          начисляются деньги, а по понедельникам они заказывают еду на всю
-          неделю. Заказ делается на специальном сайте.</span
-        >
-        <video class="wide" src="./interface.mp4" autoplay loop muted></video>
+        <h1>Murano Food</h1>
       </div>
 
       <div class="block">
         <span
-          >Старый сайт плохо работал, был неудобный и не ассоциировался с
+          >Murano Food это внутренний сервис компании для заказов обедов в офис.
+          Каждый месяц сотрудникам начисляются деньги, а по понедельникам они
+          заказывают еду на всю неделю.</span
+        >
+      </div>
+
+      <div class="block">
+        <span
+          >Прошлая версия работа плохо, была неудобной и не ассоциировалась с
           едой.</span
         >
         <img class="wide" src="./old-interface.png" alt="" />
@@ -113,11 +109,35 @@
 
       <div class="block">
         <span
-          >Чтобы людям было проще выбирать блюда, я придумал алгоритм. который
-          собирает разные верстки меню из карточек. Он смотрит есть ли
-          фотография, какие карточки находятся рядом и принимает решение, как
-          должно выглядеть меню.</span
+          >В новой версии вместо календаря, слева появился заказ на неделю с
+          возможностью переключаться между днями. Скролл стал системным.
+          Рестораны теперь на виду и переключение между ними происходит в один
+          клик.
+          <a
+            href="https://www.figma.com/proto/7G2yEtF1nPC3MyLI0Ue0WI/Murano-Food?page-id=990%3A545&node-id=2038%3A3907&viewport=312%2C48%2C0.07&scaling=min-zoom&starting-point-node-id=2038%3A3907"
+            class="link"
+            >Prototype</a
+          ></span
         >
+        <video class="wide" src="./interface.mp4" autoplay loop muted></video>
+      </div>
+
+      <div class="block">
+        <span
+          >Чтобы людям было проще выбирать блюда, был придуман алгоритм, который
+          собирает меню из карточек. Он смотрит есть ли фотография, какие
+          карточки находятся рядом и принимает решение, как должно выглядеть
+          меню.</span
+        >
+        <img src="./layouts.png" alt="" />
+      </div>
+
+      <div class="block">
+        <span
+          >Полный состав и энергитическую ценность можно посмотреть в
+          диалоге.</span
+        >
+        <img class="wide" src="./dialog.png" alt="" />
       </div>
     </div>
   </body>
