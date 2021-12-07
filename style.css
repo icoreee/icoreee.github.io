@@ -105,6 +105,14 @@ header {
   padding: 12px 0;
 }
 
+.row > *:not(:last-child) {
+  padding-right: 12px;
+}
+
+.table:last-child {
+  border-bottom: 1px solid rgba(33, 37, 41, 0.18);
+}
+
 .name {
   flex: 2;
 }
