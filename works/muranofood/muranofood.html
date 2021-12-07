@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
@@ -45,31 +46,10 @@
     <!-- /Yandex.Metrika counter -->
 
     <!-- FAVICONS -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicons/favicon-16x16.png"
-    />
-    <link rel="manifest" href="favicons/manifest.json" />
-    <link
-      rel="mask-icon"
-      href="favicons/safari-pinned-tab.svg"
-      color="#0006ff"
-    />
-    <meta name="theme-color" content="#ffffff" />
-    <meta name="msapplication-config" content="favicons/browserconfig.xml" />
+    <link rel="manifest" href="./favicons/manifest.webmanifest" />
+    <link rel="icon" href="./favicons/favicon.ico" />
+    <link rel="icon" href="./favicons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./favicons/apple-touch-icon.png" />
 
     <!-- OPEN GRAPH -->
     <meta property="og:type" content="website" />
@@ -91,12 +71,19 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../../style.css" />
+    <style>
+      :root {
+        --ws-width: 1368px;
+        --accent: #000aff;
+      }
+    </style>
   </head>
   <body>
     <div class="content">
       <header>
-        <h2><a href="../index.html">Dmitry Frolov / Murano Food</a></h2>
+        <h2><a href="../../index.html">Dmitry Frolov / Murano Food</a></h2>
+        <a href="">Prototype</a>
       </header>
 
       <div class="block">
@@ -105,16 +92,7 @@
           начисляются деньги, а по понедельникам они заказывают еду на всю
           неделю. Заказ делается на специальном сайте.</span
         >
-        <video class="wide" src="../img/muranofood/interface.mp4" autoplay loop muted></video>
-      </div>
-
-      <div class="block">
-        <span
-          >У Мурано есть доставка обедов в офис. Каждый месяц сотрудникам
-          начисляются деньги, а по понедельникам они заказывают еду на всю
-          неделю. Заказ делается на специальном сайте.</span
-        >
-        <img class="wide" src="../img/muranofood/interface.png"></img>
+        <video class="wide" src="./interface.mp4" autoplay loop muted></video>
       </div>
 
       <div class="block">
@@ -122,7 +100,7 @@
           >Старый сайт плохо работал, был неудобный и не ассоциировался с
           едой.</span
         >
-        <img class="wide" src="../img/muranofood/old-interface.png" alt="" />
+        <img class="wide" src="./old-interface.png" alt="" />
       </div>
 
       <div class="block">
@@ -130,7 +108,16 @@
           >Я провел интервью с пользователями, выписал и приоритизировал
           проблемы.</span
         >
-        <img src="../img/muranofood/prioritization-board.png" alt="" />
+        <img src="./prioritization-board.png" alt="" />
+      </div>
+
+      <div class="block">
+        <span
+          >Чтобы людям было проще выбирать блюда, я придумал алгоритм. который
+          собирает разные верстки меню из карточек. Он смотрит есть ли
+          фотография, какие карточки находятся рядом и принимает решение, как
+          должно выглядеть меню.</span
+        >
       </div>
     </div>
   </body>

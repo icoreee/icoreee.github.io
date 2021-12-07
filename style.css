@@ -1,8 +1,5 @@
 :root {
   --content-width: 1200px;
-  --ws-width: 1368px;
-
-  --accent: #000aff;
 }
 
 /* Reset */
@@ -50,6 +47,8 @@ h4 {
 
 header {
   flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
 }
 
 .block {
