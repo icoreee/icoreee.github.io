@@ -6,34 +6,31 @@
 
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
-      (function (d, w, c) {
-        (w[c] = w[c] || []).push(function () {
-          try {
-            w.yaCounter46408395 = new Ya.Metrika({
-              id: 46408395,
-              clickmap: true,
-              trackLinks: true,
-              accurateTrackBounce: true,
-              webvisor: true,
-            });
-          } catch (e) {}
-        });
-
-        var n = d.getElementsByTagName("script")[0],
-          s = d.createElement("script"),
-          f = function () {
-            n.parentNode.insertBefore(s, n);
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
           };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/watch.js";
+        m[i].l = 1 * new Date();
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
 
-        if (w.opera == "[object Opera]") {
-          d.addEventListener("DOMContentLoaded", f, false);
-        } else {
-          f();
-        }
-      })(document, window, "yandex_metrika_callbacks");
+      ym(46408395, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+      });
     </script>
     <noscript
       ><div>
@@ -67,7 +64,6 @@
     <link rel="stylesheet" href="../../style.css" />
     <style>
       :root {
-        --ws-width: 1368px;
         --accent: #000aff;
         --bg-color: #f7fafa;
       }
@@ -82,7 +78,7 @@
       <div class="block">
         <h1>Murano Food</h1>
 
-        <span
+        <span class="lead"
           >Murano Food это внутренний сервис компании для заказов обедов в офис.
           Каждый месяц сотрудникам начисляются деньги, а по понедельникам они
           заказывают еду на всю неделю.</span
@@ -92,51 +88,63 @@
       <div class="block">
         <a
           class="button"
+          target="_blank"
           href="https://www.figma.com/proto/7G2yEtF1nPC3MyLI0Ue0WI/Murano-Food?page-id=990%3A545&node-id=2038%3A3907&starting-point-node-id=2038%3A3907"
           ><span class="label">Прототип</span><span>→</span></a
         >
       </div>
 
       <div class="block">
-        <span
+        <span class="text"
           >Прошлая версия работала плохо, была неудобной и не ассоциировалась с
           едой.</span
         >
-        <img class="wide" src="./old-interface.png" alt="" />
+        <img class="wide" src="./old-interface.webp" alt="Старая версия" />
       </div>
 
       <div class="block">
-        <span
+        <span class="text"
           >Я провёл интервью с пользователями, выписал и приоритизировал
           проблемы.</span
         >
-        <img src="./prioritization-board.png" alt="" />
+        <img src="./prioritization-board.webp" alt="Доска с проблемами" />
       </div>
 
       <div class="block">
-        <span>
-          В новой версии вместо календаря, слева появился заказ на неделю
-          с возможностью переключаться между днями. Рестораны теперь на виду и
-          переключение между ними происходит в один клик.</span
+        <span class="text">
+          В новой версии вместо календаря, слева появился заказ на неделю с
+          возможностью переключаться между днями. Рестораны теперь на виду и
+          переключение между ними происходит в один клик.</span
         >
-        <video class="wide" src="./interface.mp4" autoplay loop muted></video>
+        <video
+          class="wide"
+          src="./interface.mp4"
+          poster="./interface.webp"
+          autoplay
+          loop
+          muted
+        ></video>
       </div>
 
       <div class="block">
-        <span
-          >Полный состав и энергетическую ценность теперь можно посмотреть
-          в диалоге.</span
+        <span class="text"
+          >Полный состав и энергетическую ценность теперь можно посмотреть в
+          диалоге.</span
         >
-        <img class="wide" src="./dialog.png" alt="" />
+        <img
+          class="wide"
+          src="./dialog.webp"
+          alt="Диалог с составом и энергетической ценностью"
+        />
       </div>
 
       <div class="block">
-        <span
-          >Чтобы проще выбирать еду, был придуман алгоритм, который собирает
-          меню из карточек. Он смотрит, есть ли фотография, какие карточки
+        <span class="text"
+          >Чтобы проще выбирать еду, был придуман алгоритм, который собирает
+          меню из карточек. Он смотрит, есть ли фотография, какие карточки
           находятся рядом и принимает решение, как должно выглядеть меню.</span
         >
-        <img src="./layouts.png" alt="" />
+        <img src="./layouts.webp" alt="Варианты меню" />
       </div>
     </div>
   </body>

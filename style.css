@@ -1,7 +1,3 @@
-:root {
-  --content-width: 1200px;
-}
-
 @supports (font-variation-settings: normal) {
   html {
     font-family: "Inter", sans-serif;
@@ -48,9 +44,9 @@ body {
 }
 
 h1 {
-  font-size: 156px;
+  font-size: 100px;
   font-weight: 900;
-  line-height: 1;
+  line-height: 144px;
   margin-bottom: 24px;
 }
 
@@ -58,6 +54,18 @@ h2,
 h3,
 h4 {
   font-weight: 700;
+}
+
+.lead {
+  display: block;
+  font-weight: 450;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.text {
+  display: block;
+  margin-bottom: 12px;
 }
 
 .link {
@@ -73,7 +81,7 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: var(--content-width);
+  width: 1200px;
   margin: auto;
   padding: 56px 0;
 }
@@ -85,13 +93,8 @@ h4 {
 
 .wide {
   position: relative;
-  left: calc((var(--content-width) - var(--ws-width)) / 2);
-  width: var(--ws-width);
-}
-
-.block > span {
-  display: block;
-  margin-bottom: 12px;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
 
 .row {
