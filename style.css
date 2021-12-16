@@ -60,7 +60,7 @@ section {
 /* Components */
 
 h1 {
-  font-size: 100px;
+  font-size: 120px;
   font-weight: 900;
   line-height: 144px;
   margin-bottom: 24px;
@@ -74,9 +74,9 @@ h4 {
 
 .lead {
   display: block;
-  font-weight: 450;
-  font-size: 32px;
-  line-height: 48px;
+  font-weight: 475;
+  font-size: 28px;
+  line-height: 40px;
 }
 
 .text {
