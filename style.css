@@ -1,22 +1,15 @@
-/* Fonts */
-
-@font-face {
-  font-family: "Golos VF";
-  src: url("fonts/golos_text_vf.woff2") format("woff2-variations"),
-    url("fonts/golos_text_vf.woff2") format("woff2");
-  font-weight: 400 700;
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter", sans-serif;
+  }
 }
-
 @font-face {
-  font-family: "Golos";
-  src: url("fonts/golos_text_regular.woff2") format("woff2");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Golos";
-  src: url("fonts/golos_text_bold.woff2") format("woff2");
-  font-weight: 700;
+  font-family: "Inter";
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: "Regular";
+  src: url("./fonts/Inter.var.woff2") format("woff2");
 }
 
 /* Reset */
@@ -31,165 +24,133 @@ a {
   font: inherit;
 }
 
-/* Main page */
+a {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  color: black;
+}
+
+/* Base */
+
+html {
+  font-family: "Inter", sans-serif;
+  height: 100%;
+  font-size: 24px;
+  line-height: 36px;
+  background-color: var(--bg-color);
+}
 
 body {
-  margin: 0;
-  font-family: "Golos", serif;
-  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1200px;
+  margin: auto;
+  padding-top: 56px;
 }
 
-@supports (font-variation-settings: normal) {
-  body {
-    font-family: "Golos VF", sans-serif;
-  }
+header,
+section {
+  width: 100%;
+  margin-bottom: 60px;
 }
 
-.main-page {
-  padding: 1.25rem;
+/* Components */
+
+h1 {
+  font-size: 120px;
+  font-weight: 900;
+  line-height: 144px;
+  margin-bottom: 24px;
 }
 
-h1,
 h2,
-a {
-  font-size: 1.5rem;
-  line-height: 2.25rem;
+h3,
+h4 {
+  font-weight: 700;
 }
 
-h2 {
-  font-variation-settings: "wght" 700;
-  margin-top: 2.25rem;
-}
-
-a {
-  text-decoration: none;
-  color: #0303fe;
-  font-variation-settings: "wght" 400;
-  transition: font-variation-settings 150ms ease-out;
-}
-
-a:hover {
-  font-variation-settings: "wght" 700;
-}
-
-.main-page > a {
+.lead {
   display: block;
+  font-weight: 475;
+  font-size: 28px;
+  line-height: 40px;
 }
 
-/* Works pages */
-
-.close {
-  position: fixed;
-  left: 97%;
-  top: 1%;
-  text-decoration: none;
-  opacity: 0.5;
-  font-size: 60px;
-  transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-}
-.close:hover {
-  opacity: 1;
-}
-.universes-wrap .close {
-  color: #000;
-}
-.thebatya-wrap .close,
-.olgamonina-wrap .close,
-.cheapgames-wrap .close {
-  color: #fff;
-}
-.case-image {
+.text {
   display: block;
-  margin: 0 auto;
-}
-.universes-wrap {
-  margin: 0 auto;
-  height: 7430px;
-  background-image: url(img/universes-case-1920.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-color: #f5f5f5;
-}
-@media screen and (max-width: 1400px) {
-  .universes-wrap {
-    background-image: url(img/universes-case-1400.png);
-    background-size: contain;
-  }
-}
-.thebatya-wrap {
-  margin: 0 auto;
-  height: 7490px;
-  background-image: url(img/thebatya-case-1920.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-color: #030404;
-}
-@media screen and (max-width: 1400px) {
-  .thebatya-wrap {
-    background-image: url(img/thebatya-case-1400.png);
-    background-size: contain;
-  }
-}
-.olgamonina-wrap {
-  margin: 0 auto;
-  height: 2280px;
-  background-image: url(img/olgamonina-case-1920.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-color: #181818;
-}
-@media screen and (max-width: 1400px) {
-  .olgamonina-wrap {
-    background-image: url(img/olgamonina-case-1400.png);
-    background-size: contain;
-  }
-}
-.cheapgames-wrap {
-  margin: 0 auto;
-  height: 3150px;
-  background-image: url(img/cheapgames-case-1920.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-color: #181818;
-}
-@media screen and (max-width: 1400px) {
-  .cheapgames-wrap {
-    background-image: url(img/cheapgames-case-1400.png);
-    background-size: contain;
-  }
+  margin-bottom: 12px;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  body {
-    font-size: 32px;
-  }
+.link {
+  color: var(--accent) !important;
+  transition: all 0.15s;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  body {
-    font-size: 28px;
-  }
+.link:hover {
+  opacity: 60%;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  body {
-    font-size: 24px;
-  }
+.wide-img {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  body {
-    font-size: 20px;
-  }
+.base-img {
+  width: 100%;
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  body {
-    font-size: 16px;
-  }
+.button {
+  display: block;
+  width: fit-content;
+  padding: 12px 16px;
+  box-shadow: inset 0px 0px 0px 1px var(--accent);
+  border-radius: 8px;
+  color: var(--accent) !important;
+}
+
+.button .label {
+  margin-right: 16px;
+}
+
+.button:hover {
+  background-color: var(--accent);
+  color: white !important;
+  box-shadow: none;
+}
+
+/* Table */
+
+.row {
+  display: flex;
+  border-top: 1px solid rgba(33, 37, 41, 0.18);
+  padding: 12px 0;
+}
+
+.row > *:not(:last-child) {
+  padding-right: 20px;
+}
+
+.table:last-child {
+  border-bottom: 1px solid rgba(33, 37, 41, 0.18);
+}
+
+.name {
+  flex: 3;
+}
+
+.type {
+  flex: 1;
+}
+
+.description {
+  flex: 4;
+}
+
+.year {
+  flex: 1;
+  text-align: right;
 }
