@@ -131,7 +131,7 @@ h4 {
 }
 
 .row > *:not(:last-child) {
-  padding-right: 12px;
+  padding-right: 20px;
 }
 
 .table:last-child {
@@ -139,7 +139,7 @@ h4 {
 }
 
 .name {
-  flex: 2;
+  flex: 3;
 }
 
 .type {
