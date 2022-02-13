@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
+
+      ym(46408395, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/46408395"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <!-- FAVICONS -->
+    <link rel="manifest" href="./favicons/manifest.webmanifest" />
+    <link rel="icon" href="./favicons/favicon.ico" />
+    <link rel="icon" href="./favicons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./favicons/apple-touch-icon.png" />
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Дмитрий Фролов" />
+    <meta property="og:description" content="Портфолио веб-дизайнера" />
+    <meta property="og:url" content="http://dmitryfrolov.ru" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:image" content="img/og.png" />
+    <meta property="og:image:width" content="968" />
+    <meta property="og:image:height" content="504" />
+
+    <title>Appulate — Dmitry Frolov</title>
+    <meta content="Сервис для заказа обедов в офис." name="description" />
+
+    <link rel="stylesheet" href="../../style.css" />
+    <style>
+      :root {
+        --accent: #000aff;
+        --bg-color: #fafafa;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <a href="../../index.html" class="link">← Назад</a>
+    </section>
+
+    <header>
+      <h1>Appulate</h1>
+
+      <span class="lead"
+        >Appulate&nbsp;&mdash; продукт для американского рынка страхования,
+        в&nbsp;котором агенты покупают страховки своим клиентам.
+      </span>
+    </header>
+
+    <section>
+      <span class="text"
+        >Я&nbsp;переделал сценарий работы агента, теперь он&nbsp;состоит
+        из&nbsp;трёх шагов:
+      </span>
+      <ol class="text">
+        <li>Создание страховки (Create submission)</li>
+        <li>Запрос квоты (Request quote)</li>
+        <li>Оформление полиса (Bind policy)</li>
+      </ol>
+      <span class="text">
+        Старый сценарий был сложным, агенты часто терялись, не&nbsp;могли найти
+        информацию и&nbsp;понять, что делать дальше. Новый стал более линейным
+        и&nbsp;пошаговым.</span
+      >
+    </section>
+
+    <section>
+      <h2>Главная страница</h2>
+      <span class="text"
+        >Раньше на&nbsp;главной странице агента был список клиентов (Insured).
+        В&nbsp;них были вложены страховки (Submissions). Из-за такой иерархии
+        сложно было быстро найти нужную страховку.</span
+      >
+      <img
+        class="wide-img"
+        src="./main_old.webp"
+        alt="Прошлая версия главной страницы"
+      />
+    </section>
+
+    <section>
+      <span class="text"
+        >Проведя исследование с&nbsp;аналитиками, мы&nbsp;выяснили, что обычно
+        у&nbsp;клиентов агента одна страховка. Поэтому я&nbsp;вынес страховки
+        на&nbsp;главную, а&nbsp;клиентов сделал их&nbsp;параметром.</span
+      >
+      <img
+        class="wide-img"
+        src="./main_new.webp"
+        alt="Новая версия главной страницы"
+      />
+    </section>
+
+    <section>
+      <h2>Создание новой страховки</h2>
+      <span class="text"
+        >Из-за изменений на&nbsp;главной странице упростился процесс создания
+        страховки.</span
+      >
+      <span class="text"
+        >Раньше агент сперва добавлял клиента, затем автоматически запускался
+        шаг создания страховки. Агенты не&nbsp;понимали, как создать ещё одну
+        страховку у&nbsp;того&nbsp;же клиента и&nbsp;где её&nbsp;искать после
+        создания.</span
+      >
+      <video
+        class="wide-img"
+        src="./insured-and-submission_old.webm"
+        poster="./main_old.webp"
+        autoplay
+        loop
+        muted
+      ></video>
+    </section>
+
+    <section>
+      <span class="text"
+        >Теперь страховка создаётся в&nbsp;один шаг. Страницы клиента больше
+        нет, а&nbsp;данные с&nbsp;неё отображаются на&nbsp;странице
+        страховки.</span
+      >
+      <video
+        class="wide-img"
+        src="./insured-and-submission_new.webm"
+        poster="./main_new.webp"
+        autoplay
+        loop
+        muted
+      ></video>
+    </section>
+
+    <section>
+      <span class="text"
+        >Мы&nbsp;с&nbsp;командой рассчитываем, что теперь агенты будут быстрее
+        находить страховки и&nbsp;уменьшится процент отказов при
+        её&nbsp;создании.</span
+      >
+    </section>
+
+    <section>
+      <h2>Запрос квоты</h2>
+      <span class="text"
+        >После создания страховки агент запрашивает квоту у&nbsp;страховых
+        компаний (Markets). Квота&nbsp;&mdash; это документ с&nbsp;условиями
+        и&nbsp;стоимостью страховки, если они подойдут клиенту агента,
+        то&nbsp;квота станет страховым полисом.</span
+      >
+      <span class="text"
+        >Раньше агент сперва выбирал маркетов. Их&nbsp;вопросы автоматически
+        объединялись в&nbsp;единую форму. После её&nbsp;заполнения агент
+        запрашивал квоты сразу у&nbsp;нескольких маркетов.</span
+      >
+      <span class="text">Такой подход имел проблемы:</span>
+      <ul class="text">
+        <li>
+          Формы получались гигантскими, с&nbsp;обратной зависимостью вопросов,
+          со&nbsp;сложной структурой и&nbsp;вложенностью.
+        </li>
+        <li>
+          Разработка алгоритма для объединения форм нескольких маркетов занимала
+          много времени у&nbsp;разработчиков.
+        </li>
+      </ul>
+      <video
+        class="wide-img"
+        src="./request-quote_old.webm"
+        poster="./request-quote_old_poster.webp"
+        autoplay
+        loop
+        muted
+      ></video>
+    </section>
+
+    <section>
+      <span class="text"
+        >После наблюдения за&nbsp;работой агентов мы&nbsp;пришли к&nbsp;выводу,
+        что лучше сделать, чтобы агент запрашивал квоту у&nbsp;маркетов
+        по&nbsp;очереди.</span
+      >
+      <span class="text">Плюсы нового подхода:</span>
+      <ul class="text">
+        <li>Агенты быстрее получают квоты, так как формы стали меньше.</li>
+        <li>
+          Дизайн форм стал проще, а&nbsp;структура контролируется вручную, это
+          позволяет правильно организовать последовательность вопросов, сделать
+          удобную структуру и&nbsp;избавиться от&nbsp;вложенности.
+        </li>
+        <li>
+          Разработчики стали быстрее добавлять новые формы и&nbsp;маркеты.
+        </li>
+      </ul>
+      <video
+        class="wide-img"
+        src="./request-quote_new.webm"
+        poster="./request-quote_new_poster.webp"
+        autoplay
+        loop
+        muted
+      ></video>
+    </section>
+  </body>
+</html>
