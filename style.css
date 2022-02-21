@@ -48,7 +48,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
   padding-top: 56px;
 }
