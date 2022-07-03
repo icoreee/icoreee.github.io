@@ -44,7 +44,7 @@
 
     <!-- FAVICONS -->
     <link rel="manifest" href="./favicons/manifest.webmanifest" />
-    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="./favicons/favicon.ico" sizes="any" />
     <link rel="icon" href="./favicons/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./favicons/apple-touch-icon.png" />
 
@@ -64,100 +64,69 @@
       name="description"
     />
 
+    <link rel="stylesheet" href="https://use.typekit.net/lkr0fai.css" />
     <link rel="stylesheet" href="style.css" />
-
-    <style>
-      :root {
-        --accent: #000aff;
-        --bg-color: white;
-      }
-    </style>
   </head>
 
   <body>
-    <header>
-      <h1>Dmitry Frolov</h1>
-      <span class="lead"
-        >Привет! Я&nbsp;дизайнер и&nbsp;разработчик из&nbsp;Санкт-Петербурга.
-        Сейчас руковожу командой продуктовых дизайнеров в&nbsp;<a
-          class="link"
-          target="_blank"
-          href="https://muranosoft.ru/"
-          >Murano</a
-        >. Пишите мне на
-        <a class="link" href="mailto:icoree@gmail.com">почту</a> или в&nbsp;<a
-          class="link"
-          target="_blank"
-          href="https://t.me/icoreee"
-          >телеграм</a
-        >.</span
+    <span class="l-logo text">Dmitry Frolov</span>
+
+    <a class="l-cv button">
+      <span href="#" class="text">CV</span>
+      <svg
+        width="16"
+        height="18"
+        xmlns="http://www.w3.org/2000/svg"
+        class="button-icon"
       >
-    </header>
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="m15.414 7-6.707 6.707a1 1 0 0 1-1.414 0L.586 7 2 5.586l5 5V0h2v10.586l5-5L15.414 7ZM15 18H1v-2h14v2Z"
+        />
+      </svg>
+    </a>
 
-    <section>
-      <div class="table">
-        <a class="row" href="./works/appulate/">
-          <span class="name link">Appulate</span>
-          <span class="type">Work</span>
-          <span class="description"
-            >Продукт для американского рынка страхования</span
-          >
-          <span class="year">2021</span>
-        </a>
+    <p class="l-around-text text">
+      Hello! I am a product designer with over 5 years of experience. Now I am
+      working as a Design Lead at
+      <a
+        href="http://appulate.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="button"
+        >Appulate</a
+      >. Also, I am passionate about coding.
+    </p>
 
-        <a class="row" target="_blank" href="https://zeroheight.com/47082b9bb">
-          <span class="name link">Appulate Design System</span>
-          <span class="type">Work</span>
-          <span class="description">Разработка дизайн-системы</span>
-          <span class="year">2021</span>
-        </a>
-
-        <a
-          class="row"
-          target="_blank"
-          href="https://www.figma.com/community/plugin/851113644019611421/Recognize"
+    <div class="l-portrait">
+      <img src="./img/home/portrait.png" alt="" />
+      <span class="l-portrait-copyright caption">2021 © Kirill Karetin</span>
+    </div>
+    <h2 class="text">Works</h2>
+    <div class="l-card card">
+      <img src="./img/home/cover-appulate.png" alt="" class="cover" />
+      <div class="card-bottom">
+        <span class="card-bar"
+          >Design, Strategy, Research
+          <span class="slash">/</span> 2018–Present</span
         >
-          <span class="name link">Recognize</span>
-          <span class="type">Tool</span>
-          <span class="description"
-            >Плагин в&nbsp;Figma для распознавания текста
-            с&nbsp;изображения</span
+        <a class="button">
+          <span href="#">Read</span>
+          <svg
+            width="18"
+            height="24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="button-icon"
           >
-          <span class="year">2021</span>
-        </a>
-
-        <a class="row" href="./works/muranofood/">
-          <span class="name link">Murano Food</span>
-          <span class="type">Work</span>
-          <span class="description">Сервис для заказа обедов в&nbsp;офис</span>
-          <span class="year">2020</span>
-        </a>
-
-        <a
-          class="row"
-          target="_blank"
-          href="https://www.figma.com/community/file/877278625621187920/Instagram-Stories-Preview"
-        >
-          <span class="name link">Instagram Stories Preview</span>
-          <span class="type">Tool</span>
-          <span class="description"
-            >Шаблон в&nbsp;Figma для предпросмотра историй
-            в&nbsp;Instagram</span
-          >
-          <span class="year">2020</span>
-        </a>
-
-        <a
-          class="row"
-          target="_blank"
-          href="https://dmitryfrolov.ru/typesigns/"
-        >
-          <span class="name link">Typesigns</span>
-          <span class="type">Tool</span>
-          <span class="description">Набор типографских символов</span>
-          <span class="year">2018</span>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="m11 4.586 6.707 6.707a1 1 0 0 1 0 1.414L11 19.414 9.586 18l5-5H0v-2h14.586l-5-5L11 4.586Z"
+            />
+          </svg>
         </a>
       </div>
-    </section>
+    </div>
   </body>
 </html>
