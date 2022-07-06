@@ -58,8 +58,6 @@ body {
 
   display: inline-flex;
   align-items: center;
-
-  justify-self: end;
 }
 
 .c-button:hover {
@@ -96,6 +94,11 @@ body {
   margin-left: 16px;
 }
 
+.c-contacts-links * {
+  display: block;
+  margin-bottom: 8px;
+}
+
 /* LAYOUT */
 
 .l-logo {
@@ -104,7 +107,7 @@ body {
 
 .l-cv {
   grid-column: 5 / end;
-  text-align: right;
+  justify-self: end;
 }
 
 .l-about-text {
@@ -113,20 +116,43 @@ body {
   margin-top: 60px;
 }
 
-.l-portrait {
-  grid-column: 1 / end;
-
+.l-about-text + .l-portrait {
   margin-top: 20px;
 }
 
-.l-card {
+.l-portrait {
   grid-column: 1 / end;
+}
+
+.l-portrait + .l-heading {
+  margin-top: 80px;
 }
 
 .l-heading {
   grid-column: 1 / end;
+
+  margin-bottom: 16px;
 }
 
-.l-contacts-link {
+.l-card {
   grid-column: 1 / end;
+  margin-bottom: 24px;
+}
+
+.l-contacts-links {
+  grid-column: 1 / end;
+}
+
+.l-contacts-links + .l-year {
+  margin-top: 80px;
+}
+
+.l-year {
+  grid-column: 1 / 4;
+}
+
+.l-favicon {
+  grid-column: 4 / end;
+  justify-self: end;
+  align-self: end;
 }
