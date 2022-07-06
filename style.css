@@ -27,7 +27,7 @@ body {
   line-height: 26px;
 
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-auto-columns: minmax(0, 1fr);
   column-gap: 20px;
 
   margin: 24px 20px;
@@ -53,6 +53,10 @@ body {
 
 /* COMPONENTS */
 
+.c-nav * {
+  margin-right: 24px;
+}
+
 .c-button {
   color: var(--accent);
 
@@ -75,6 +79,10 @@ body {
 
 .c-picture .c-picture-captio {
   margin-top: 8px;
+}
+
+.c-works {
+  display: contents;
 }
 
 .c-card img {
@@ -101,58 +109,234 @@ body {
 
 /* LAYOUT */
 
-.l-logo {
-  grid-column: 1 / 5;
+@media screen and (max-width: 730px) {
+  .l-logo {
+    grid-column: 1 / 5;
+  }
+
+  .l-nav {
+    display: none;
+  }
+
+  .l-cv {
+    grid-column: 5 / 7;
+    justify-self: end;
+    align-self: start;
+
+    margin-bottom: 80px;
+  }
+
+  .l-about-heading {
+    display: none;
+  }
+
+  .l-about-text {
+    grid-column: 1 / 7;
+
+    margin-bottom: 20px;
+  }
+  .l-portrait {
+    grid-column: 1 / 7;
+
+    margin-bottom: 80px;
+  }
+
+  .l-works-heading {
+    grid-column: 1 / 7;
+
+    margin-bottom: 16px;
+  }
+
+  .l-card {
+    grid-column: 1 / 7;
+    margin-bottom: 24px;
+  }
+
+  .l-card:last-child {
+    margin-bottom: 80px;
+  }
+
+  .l-contacts-heading {
+    grid-column: 1 / 7;
+  }
+
+  .l-contacts-links {
+    grid-column: 1 / 7;
+
+    margin-bottom: 80px;
+  }
+
+  .l-copyright {
+    display: none;
+  }
+
+  .l-year {
+    grid-column: 1 / 4;
+  }
+
+  .l-favicon {
+    grid-column: 4 / 7;
+    justify-self: end;
+    align-self: end;
+  }
 }
 
-.l-cv {
-  grid-column: 5 / end;
-  justify-self: end;
+@media screen and (min-width: 731px) and (max-width: 1100px) {
+  .l-logo {
+    grid-column: 1 / 5;
+  }
+
+  .l-nav {
+    display: none;
+  }
+
+  .l-cv {
+    grid-column: 5 / 7;
+    justify-self: end;
+    align-self: start;
+
+    margin-bottom: 80px;
+  }
+
+  .l-about-heading {
+    display: none;
+  }
+
+  .l-about-text {
+    grid-column: 1 / 7;
+
+    margin-bottom: 20px;
+  }
+
+  .l-portrait {
+    grid-column: 1 / 5;
+
+    margin-bottom: 80px;
+  }
+
+  .l-works-heading {
+    grid-column: 1 / 7;
+
+    margin-bottom: 16px;
+  }
+
+  .l-card {
+    margin-bottom: 24px;
+  }
+
+  .l-card:nth-child(odd) {
+    grid-column: 1 / 4;
+  }
+
+  .l-card:nth-child(even) {
+    grid-column: 4 / 7;
+  }
+
+  .l-card:last-child {
+    margin-bottom: 80px;
+  }
+
+  .l-contacts-heading {
+    grid-column: 1 / 4;
+  }
+
+  .l-contacts-links {
+    grid-column: 4 / 7;
+
+    margin-bottom: 80px;
+  }
+
+  .l-copyright {
+    grid-column: 1 / 4;
+  }
+
+  .l-year {
+    grid-column: 4 / 5;
+  }
+
+  .l-favicon {
+    grid-column: 6 / 7;
+    justify-self: end;
+    align-self: end;
+  }
 }
 
-.l-about-text {
-  grid-column: 1 / end;
+@media screen and (min-width: 1101px) {
+  .l-logo {
+    grid-column: 1 / 3;
+  }
 
-  margin-top: 60px;
-}
+  .l-nav {
+    grid-column: 3 / 6;
+  }
 
-.l-about-text + .l-portrait {
-  margin-top: 20px;
-}
+  .l-cv {
+    grid-column: 6 / 7;
+    justify-self: end;
+    align-self: start;
 
-.l-portrait {
-  grid-column: 1 / end;
-}
+    margin-bottom: 80px;
+  }
 
-.l-portrait + .l-heading {
-  margin-top: 80px;
-}
+  .l-about-heading {
+    grid-column: 1 / 3;
+  }
 
-.l-heading {
-  grid-column: 1 / end;
+  .l-about-text {
+    grid-column: 3 / 7;
 
-  margin-bottom: 16px;
-}
+    margin-bottom: 20px;
+  }
 
-.l-card {
-  grid-column: 1 / end;
-  margin-bottom: 24px;
-}
+  .l-portrait {
+    grid-column: 3 / 6;
 
-.l-contacts-links {
-  grid-column: 1 / end;
-}
+    margin-bottom: 80px;
+  }
 
-.l-contacts-links + .l-year {
-  margin-top: 80px;
-}
+  .l-works-heading {
+    grid-column: 1 / 3;
 
-.l-year {
-  grid-column: 1 / 4;
-}
+    margin-bottom: 16px;
+  }
 
-.l-favicon {
-  grid-column: 4 / end;
-  justify-self: end;
-  align-self: end;
+  .l-card {
+    margin-bottom: 24px;
+  }
+
+  .l-card:nth-child(odd) {
+    grid-column: 3 / 5;
+  }
+
+  .l-card:nth-child(even) {
+    grid-column: 5 / 7;
+  }
+
+  .l-card:last-child {
+    margin-bottom: 80px;
+  }
+
+  .l-contacts-heading {
+    grid-column: 1 / 3;
+  }
+
+  .l-contacts-links {
+    grid-column: 3 / 7;
+
+    margin-bottom: 80px;
+  }
+
+  .l-copyright {
+    grid-column: 1 / 3;
+  }
+
+  .l-year {
+    grid-column: 3 / 5;
+  }
+
+  .l-favicon {
+    grid-column: 6 / 7;
+    justify-self: end;
+    align-self: end;
+  }
 }
