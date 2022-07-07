@@ -118,7 +118,7 @@ body {
 
 /* LAYOUT */
 
-@media screen and (max-width: 729px) {
+@media screen and (max-width: 699px) {
   .l-logo {
     grid-column: 1 / 5;
   }
@@ -192,7 +192,7 @@ body {
   }
 }
 
-@media screen and (min-width: 730px) and (max-width: 1100px) {
+@media screen and (min-width: 700px) and (max-width: 1109px) {
   .l-logo {
     grid-column: 1 / 5;
   }
@@ -272,7 +272,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1101px) {
+@media screen and (min-width: 1100px) {
   .l-logo {
     grid-column: 1 / 3;
   }
