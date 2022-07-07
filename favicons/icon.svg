@@ -1,3 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
-    <path d="M30 4V2H2L2 30H4V18H30V16L4 16V4L30 4Z" fill="#0303FE"/>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 32H12V20L6 26V32Z" fill="#FAB519"/>
+<path d="M6 20H12V8L6 14V20Z" fill="#FAB519"/>
+<path d="M24 14V20H12L18 14H24Z" fill="#FAB519"/>
+<path d="M24 2V8H12L18 2L24 2Z" fill="#FAB519"/>
 </svg>
