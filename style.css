@@ -1,6 +1,5 @@
 :root {
   --accent: #fab519;
-  --accent-hover: #e49e00;
 }
 
 /* SETUP */
@@ -61,18 +60,17 @@ body {
   margin-right: 24px;
 }
 
-.c-button {
-  color: var(--accent);
-
+.c-link {
   display: inline-flex;
   align-items: center;
+  height: fit-content;
 }
 
-.c-button:hover {
-  color: var(--accent-hover);
+.c-link:hover {
+  opacity: 0.8;
 }
 
-.c-button .button-icon {
+.c-link .link-icon {
   margin: 4px 0 0 4px;
   fill: currentColor;
 }
@@ -100,7 +98,7 @@ body {
   align-items: flex-start;
 }
 
-.c-card .c-button {
+.c-card .c-link {
   text-align: right;
   flex-shrink: 0;
   margin-left: 16px;
