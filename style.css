@@ -47,8 +47,12 @@ body {
   opacity: 60%;
 }
 
-.t-accent-color {
+.t-color-accent {
   color: var(--accent);
+}
+
+.t-color-gray {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* COMPONENTS */
