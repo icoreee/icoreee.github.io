@@ -192,7 +192,7 @@ body {
   }
 }
 
-@media screen and (min-width: 700px) and (max-width: 1109px) {
+@media screen and (min-width: 700px) and (max-width: 1099px) {
   .l-logo {
     grid-column: 1 / 5;
   }
