@@ -145,7 +145,7 @@ h4 {
 
 .button:hover {
   background-color: var(--accent);
-  color: white !important;
+  color: black !important;
   box-shadow: none;
 }
 
