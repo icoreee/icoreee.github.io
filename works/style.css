@@ -83,9 +83,12 @@ header > *:not(.wide-img) {
 /* Components */
 
 h1 {
-  font-size: 120px;
+  font-size: calc(6vw + 26px);
+  line-height: calc(6vw + 34px);
+
   font-weight: 900;
-  line-height: 144px;
+  /* font-size: 120px;
+  line-height: 144px; */
   margin-bottom: 24px;
 }
 
