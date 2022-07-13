@@ -65,7 +65,7 @@
   </head>
   <body>
     <section>
-      <a href="../../" class="link">← Назад</a>
+      <a href="../../" class="link">← Back</a>
     </section>
 
     <header>
@@ -78,27 +78,26 @@
 
     <section>
       <span class="text"
-        >Я&nbsp;переделал сценарий работы агента, теперь он&nbsp;состоит
-        из&nbsp;трёх шагов:
+        >I have redesigned the agent's workflow, now it consists of three steps:
       </span>
       <ol class="text">
-        <li>Создание страховки (Create submission)</li>
-        <li>Запрос квоты (Request quote)</li>
-        <li>Оформление полиса (Bind policy)</li>
+        <li>Create submission</li>
+        <li>Request quote</li>
+        <li>Bind policy</li>
       </ol>
       <span class="text">
-        Старый сценарий был сложным, агенты часто терялись, не&nbsp;могли найти
-        информацию и&nbsp;понять, что делать дальше. Новый стал более линейным
-        и&nbsp;пошаговым.</span
+        The former workflow was complicated, agents often got lost, and couldn't
+        find information and figure out what to do next. The new one has become
+        more linear and step-by-step.</span
       >
     </section>
 
     <section>
-      <h2>Главная страница</h2>
+      <h2>Main Page</h2>
       <span class="text"
-        >Раньше на&nbsp;главной странице агента был список клиентов (Insured).
-        В&nbsp;них были вложены страховки (Submissions). Из-за такой иерархии
-        сложно было быстро найти нужную страховку.</span
+        >Previously, the agent's main page had a list of insured. Submissions
+        were nested in them. Because of this hierarchy, it was difficult to
+        quickly find the right submission.</span
       >
       <img
         class="wide-img"
@@ -109,9 +108,9 @@
 
     <section>
       <span class="text"
-        >Проведя исследование с&nbsp;аналитиками, мы&nbsp;выяснили, что обычно
-        у&nbsp;клиентов агента одна страховка. Поэтому я&nbsp;вынес страховки
-        на&nbsp;главную, а&nbsp;клиентов сделал их&nbsp;параметром.</span
+        >After conducting research with analysts, we found out that usually the
+        insured have one submission. Therefore, I took out a submission on the
+        main page and made the insured name their parameter.</span
       >
       <img
         class="wide-img"
@@ -121,16 +120,16 @@
     </section>
 
     <section>
-      <h2>Создание новой страховки</h2>
+      <h2>Creating a New Submission</h2>
       <span class="text"
-        >Из-за изменений на&nbsp;главной странице упростился процесс создания
-        страховки.</span
+        >Due to changes on the main page, the process of creating a submission
+        has been simplified.</span
       >
       <span class="text"
-        >Раньше агент сперва добавлял клиента, затем автоматически запускался
-        шаг создания страховки. Агенты не&nbsp;понимали, как создать ещё одну
-        страховку у&nbsp;того&nbsp;же клиента и&nbsp;где её&nbsp;искать после
-        создания.</span
+        >Previously, the creation of insurance was started automatically after
+        adding a client. The agents did not understand how to create another
+        insurance from the same insured and where to look for it after
+        creation.</span
       >
       <video
         class="wide-img"
@@ -144,9 +143,9 @@
 
     <section>
       <span class="text"
-        >Теперь страховка создаётся в&nbsp;один шаг. Страницы клиента больше
-        нет, а&nbsp;данные с&nbsp;неё отображаются на&nbsp;странице
-        страховки.</span
+        >Now the insurance is created in one step. The client's page is no
+        longer there, and the data from it is displayed on the submission
+        page.</span
       >
       <video
         class="wide-img"
@@ -160,34 +159,33 @@
 
     <section>
       <span class="text"
-        >Мы&nbsp;с&nbsp;командой рассчитываем, что теперь агенты будут быстрее
-        находить страховки и&nbsp;уменьшится процент отказов при
-        её&nbsp;создании.</span
+        >My team and I hope that now agents will find insurance faster and the
+        failure rate will decrease.</span
       >
     </section>
 
     <section>
-      <h2>Запрос квоты</h2>
+      <h2>Request Quote</h2>
       <span class="text"
-        >После создания страховки агент запрашивает квоту у&nbsp;страховых
-        компаний (Markets). Квота&nbsp;&mdash; это документ с&nbsp;условиями
-        и&nbsp;стоимостью страховки, если они подойдут клиенту агента,
-        то&nbsp;квота станет страховым полисом.</span
+        >After the insurance is created, the agent requests a quote from
+        insurance companies. A quote is a document with the terms and premium of
+        insurance, if they are suitable for the agent's client, the binding
+        procedure will start.</span
       >
       <span class="text"
-        >Раньше агент сперва выбирал маркетов. Их&nbsp;вопросы автоматически
-        объединялись в&nbsp;единую форму. После её&nbsp;заполнения агент
-        запрашивал квоты сразу у&nbsp;нескольких маркетов.</span
+        >Previously, the agent first chose the markets. Their questions were
+        automatically merged into a single form. After filling it out, the agent
+        requested quotes from several markets at once.</span
       >
-      <span class="text">Такой подход имел проблемы:</span>
+      <span class="text">This approach had problems:</span>
       <ul class="text">
         <li>
-          Формы получались гигантскими, с&nbsp;обратной зависимостью вопросов,
-          со&nbsp;сложной структурой и&nbsp;вложенностью.
+          The forms got gigantic, with an inverse dependence of questions, with
+          a complex structure and nesting.
         </li>
         <li>
-          Разработка алгоритма для объединения форм нескольких маркетов занимала
-          много времени у&nbsp;разработчиков.
+          The development of an algorithm for merging forms of several markets
+          took a lot of time for developers.
         </li>
       </ul>
       <video
@@ -202,21 +200,18 @@
 
     <section>
       <span class="text"
-        >После наблюдения за&nbsp;работой агентов мы&nbsp;пришли к&nbsp;выводу,
-        что лучше сделать, чтобы агент запрашивал квоту у&nbsp;маркетов
-        по&nbsp;очереди.</span
+        >After observing the work of the agents, we concluded that it was better
+        to make the agent request quotes from the markets one at a time.</span
       >
-      <span class="text">Плюсы нового подхода:</span>
+      <span class="text">Advantages of the new approach:</span>
       <ul class="text">
-        <li>Агенты быстрее получают квоты, так как формы стали меньше.</li>
+        <li>Agents get quotes faster as the forms have become shorter.</li>
         <li>
-          Дизайн форм стал проще, а&nbsp;структура контролируется вручную, это
-          позволяет правильно организовать последовательность вопросов, сделать
-          удобную структуру и&nbsp;избавиться от&nbsp;вложенности.
+          The design of the forms has become simpler, and the structure is
+          controlled manually, this allows us to properly organize the sequence
+          of questions, make a convenient structure and get rid of nesting.
         </li>
-        <li>
-          Разработчики стали быстрее добавлять новые формы и&nbsp;маркеты.
-        </li>
+        <li>Developers have started to add new forms of markets faster.</li>
       </ul>
       <video
         class="wide-img"
