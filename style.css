@@ -372,5 +372,16 @@ body {
 
   .l-cta {
     grid-column: 5 / 7;
+    justify-self: end;
+  }
+
+  .l-wide {
+    grid-column: 1 / 7;
+    width: 100%;
+  }
+
+  .l-right {
+    grid-column: 3 / 7;
+    width: 100%;
   }
 }
