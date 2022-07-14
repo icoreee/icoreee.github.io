@@ -41,6 +41,13 @@ body {
 
 /* TOKENS */
 
+.t-big-text {
+  font-size: 48px;
+  line-height: 68px;
+  display: inline-block;
+  letter-spacing: -0.02em;
+}
+
 .t-text {
   font-size: 24px;
   line-height: 36px;
@@ -116,7 +123,7 @@ body {
   margin-bottom: 8px;
 }
 
-/* LAYOUT */
+/* LAYOUT HOME PAGE */
 
 @media screen and (max-width: 699px) {
   .l-logo {
@@ -349,5 +356,21 @@ body {
     grid-column: 6 / 7;
     justify-self: end;
     align-self: end;
+  }
+}
+
+/* LAYOUT INNER PAGE */
+
+@media screen and (min-width: 1100px) {
+  .l-title {
+    grid-column: 1 / 3;
+  }
+
+  .l-meta-info {
+    grid-column: 3 / 5;
+  }
+
+  .l-cta {
+    grid-column: 5 / 7;
   }
 }
