@@ -95,69 +95,96 @@
     </a>
 
     <h1 class="l-title t-big-text">
-      Murano Food<span class="t-color-accent"> /</span>
+      Murano Food<span class="t-color-accent">&nbsp;/</span>
     </h1>
 
     <span class="l-meta-info t-big-text"
-      >Strategy, Prototyping, Research, Design
-      <span class="t-color-accent"> / </span>2020–Now</span
+      >Strategy, Prototyping, Research, Design<span class="t-color-accent"
+        >&nbsp;/ </span
+      ><span class="t-non-break">2020–Now</span></span
     >
 
     <a
-      class="l-cta c-link t-text t-color-accent"
+      class="l-cta c-button t-text"
       target="_blank"
       href="https://www.figma.com/proto/7G2yEtF1nPC3MyLI0Ue0WI/Murano-Food?page-id=990%3A545&node-id=2038%3A3907&starting-point-node-id=2038%3A3907"
-      ><span class="label">Prototype</span><span>→</span></a
-    >
+      ><span>Prototype</span>
+      <svg
+        width="30"
+        height="26"
+        viewBox="0 0 30 26"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M18 0.585938L29.7071 12.293C29.8946 12.4806 30 12.7349 30 13.0002C30 13.2654 29.8946 13.5197 29.7071 13.7073L18 25.4144L16.5858 24.0002L26.5858 14.0002L0 14.0002L2.38419e-07 12.0002L26.5858 12.0002L16.5858 2.00015L18 0.585938Z"
+        />
+      </svg>
+    </a>
 
-    <span class="l-right t-text"
-      >The previous version worked badly and was useless. Appearance didn't
-      associate with food.</span
-    >
+    <div class="l-wide c-img t-margin-top-80">
+      <img
+        src="./dialog.webp"
+        alt="The dialogue with ingredients and nutrition facts"
+      />
+    </div>
+
+    <p class="l-right t-text">
+      The previous version worked badly and was useless. Appearance didn't
+      associate with food.
+    </p>
+
     <img
       class="l-right"
       src="./old-interface.webp"
       alt="The previous version"
     />
 
-    <span class="l-right t-text"
-      >I have conducted interviews with users, collected problems and
-      prioritized them.</span
-    >
+    <p class="l-right t-text">
+      I have conducted interviews with users, collected problems and prioritized
+      them.
+    </p>
+
     <img
       class="l-right"
       src="./prioritization-board.webp"
       alt="Board with problems"
     />
 
-    <span class="l-right t-text">
+    <p class="l-right t-text">
       In the new version, instead of the calendar, there is sidebar with order
       for the week. Restaurants are now visible and you can switch between them
-      with a single click.</span
-    >
-    <video
-      class="l-wide"
-      src="./interface.mp4"
-      poster="./interface.webp"
-      autoplay
-      loop
-      muted
-    ></video>
+      with a single click.
+    </p>
 
-    <span class="l-right t-text"
-      >The ingredients and nutrition facts are displayed in the dialogue.</span
-    >
-    <img
-      class="l-wide"
-      src="./dialog.webp"
-      alt="The dialogue with ingredients and nutrition facts"
-    />
+    <div class="l-wide c-img">
+      <video
+        src="./interface.mp4"
+        poster="./interface.webp"
+        autoplay
+        loop
+        muted
+      ></video>
+    </div>
 
-    <span class="l-right t-text"
-      >Based on the available information about the dish and the nearest cards,
-      a special algorithm chooses the appearance and location of the dish
-      card.</span
-    >
+    <p class="l-right t-text">
+      The ingredients and nutrition facts are displayed in the dialogue.
+    </p>
+
+    <div class="l-wide c-img">
+      <img
+        src="./dialog.webp"
+        alt="The dialogue with ingredients and nutrition facts"
+      />
+    </div>
+
+    <p class="l-right t-text">
+      Based on the available information about the dish and the nearest cards, a
+      special algorithm chooses the appearance and location of the dish card.
+    </p>
+
     <img class="l-right" src="./layouts.webp" alt="Menu" />
 
     <a href="../../" class="l-copyright c-link t-text">dmitryfrolov.ru</a>
@@ -179,5 +206,28 @@
         <path d="M24 2V8H12L18 2L24 2Z" />
       </svg>
     </a>
+
+    <script>
+      function reducePadding(e) {
+        let childWidth = e.firstElementChild.clientWidth;
+
+        let size = Math.floor((e.clientWidth - childWidth) / 6);
+        e.style.paddingTop = `${size}px`;
+      }
+
+      let elements = document.querySelectorAll(".l-wide");
+
+      window.addEventListener("load", (event) => {
+        for (let e of elements) {
+          reducePadding(e);
+        }
+      });
+
+      window.addEventListener("resize", (event) => {
+        for (let e of elements) {
+          reducePadding(e);
+        }
+      });
+    </script>
   </body>
 </html>
