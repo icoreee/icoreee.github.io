@@ -65,7 +65,6 @@
       name="description"
     />
 
-    <!-- <link rel="stylesheet" href="../style.css" /> -->
     <link rel="stylesheet" href="../../style.css" />
   </head>
   <body>
@@ -207,21 +206,21 @@
 
     <script>
       function reducePadding(e) {
-        let childWidth = e.firstElementChild.clientWidth;
-
-        let size = Math.floor((e.clientWidth - childWidth) / 6);
+        let size = Math.floor(
+          (e.clientWidth - e.firstElementChild.clientWidth) / 6
+        );
         e.style.paddingTop = `${size}px`;
       }
 
       let elements = document.querySelectorAll(".l-wide");
 
-      window.addEventListener("load", (event) => {
+      window.addEventListener("load", () => {
         for (let e of elements) {
           reducePadding(e);
         }
       });
 
-      window.addEventListener("resize", (event) => {
+      window.addEventListener("resize", () => {
         for (let e of elements) {
           reducePadding(e);
         }
