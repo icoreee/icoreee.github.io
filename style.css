@@ -472,7 +472,8 @@ body {
 
   p.l-right,
   ol.l-right,
-  ul.l-right {
+  ul.l-right,
+  h2.l-left {
     margin-bottom: 24px;
   }
 }
@@ -514,7 +515,8 @@ body {
 
   p.l-right,
   ol.l-right,
-  ul.l-right {
+  ul.l-right,
+  h2.l-left {
     margin-bottom: 24px;
   }
 }
