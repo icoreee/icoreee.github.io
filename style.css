@@ -68,8 +68,12 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.t-margin-top-80 {
+.t-article-margin:first-of-type {
   margin-top: 80px;
+}
+
+.t-article-margin:last-of-type {
+  margin-bottom: 80px;
 }
 
 .t-non-break {
@@ -85,13 +89,17 @@ body {
   display: inline-flex;
   align-items: center;
   height: fit-content;
+
+  transition: all 0.2s;
 }
 
 .c-link:hover {
   opacity: 0.8;
+
+  transition: all 0.2s;
 }
 
-.c-link .link-icon {
+.c-link svg {
   margin: 2px 0 0 4px;
   fill: currentColor;
 }
@@ -106,6 +114,14 @@ body {
   background-color: var(--accent);
   color: black;
   border-radius: calc(56px / 2);
+
+  transition: all 0.2s;
+}
+
+.c-button:hover {
+  opacity: 0.8;
+
+  transition: all 0.2s;
 }
 
 .c-button span {
@@ -114,10 +130,6 @@ body {
 
 .c-button svg {
   margin-left: 32px;
-}
-
-.c-button:hover {
-  opacity: 0.8;
 }
 
 .c-picture img {
@@ -422,6 +434,7 @@ body {
   .l-cta {
     grid-column: 5 / 7;
     justify-self: end;
+    margin-top: 12px;
   }
 
   .l-wide {
