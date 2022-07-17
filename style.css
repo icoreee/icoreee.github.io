@@ -51,20 +51,26 @@ body {
 
 /* TOKENS */
 
-.t-big-text {
+.t-text-xl {
   font-size: 48px;
   line-height: 68px;
   display: inline-block;
   letter-spacing: -0.02em;
 }
 
-.t-text {
+.t-text-l {
+  font-size: 36px;
+  line-height: 52px;
+  display: inline-block;
+}
+
+.t-text-m {
   font-size: 24px;
   line-height: 36px;
   display: inline-block;
 }
 
-.t-caption {
+.t-text-caption {
   opacity: 60%;
   display: inline-block;
 }
