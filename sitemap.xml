@@ -4,36 +4,33 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
 
 <url>
   <loc>https://dmitryfrolov.ru/</loc>
-  <lastmod>2017-10-26T07:10:02+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2022-07-17T21:02:12+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://dmitryfrolov.ru/universes.html</loc>
-  <lastmod>2017-10-28T07:18:15+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>https://dmitryfrolov.ru/cv.pdf</loc>
+  <lastmod>2022-07-17T21:02:12+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://dmitryfrolov.ru/thebatya.html</loc>
-  <lastmod>2017-10-28T07:18:15+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>https://dmitryfrolov.ru/works/appulate/</loc>
+  <lastmod>2022-07-17T21:02:12+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://dmitryfrolov.ru/olgamonina.html</loc>
-  <lastmod>2017-10-28T07:18:13+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>https://dmitryfrolov.ru/works/muranofood/</loc>
+  <lastmod>2022-07-17T21:02:12+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://dmitryfrolov.ru/cheapgames.html</loc>
-  <lastmod>2017-10-28T07:18:14+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>https://dmitryfrolov.ru/typesigns/</loc>
+  <lastmod>2021-02-01T15:19:54+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
-<url>
-  <loc>https://dmitryfrolov.ru/index.html</loc>
-  <lastmod>2017-10-26T07:10:02+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
+
+
 </urlset>
