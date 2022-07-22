@@ -1,5 +1,7 @@
 :root {
-  --accent: #fab519;
+  --color-accent: #fab519;
+  --color-black: #000;
+  --color-white: #fff;
 }
 
 /* SETUP */
@@ -32,12 +34,16 @@ ul {
   list-style-type: "— ";
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: synthese, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1rem;
+  line-height: 1.5rem;
 
   display: grid;
   grid-auto-columns: minmax(0, 1fr);
@@ -45,28 +51,28 @@ body {
 
   margin: 24px 20px;
 
-  background-color: black;
-  color: white;
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
 
 /* TOKENS */
 
 .t-text-xl {
-  font-size: 48px;
-  line-height: 68px;
+  font-size: 3.5rem;
+  line-height: 4.75rem;
   display: inline-block;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 
 .t-text-l {
-  font-size: 36px;
-  line-height: 52px;
+  font-size: 2.25rem;
+  line-height: 3.25rem;
   display: inline-block;
 }
 
 .t-text-m {
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
   display: inline-block;
 }
 
@@ -76,11 +82,12 @@ body {
 }
 
 .t-color-accent {
-  color: var(--accent);
+  color: var(--color-accent);
 }
 
 .t-color-gray {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--color-white);
+  opacity: 0.6;
 }
 
 .t-article-margin:first-of-type {
@@ -130,8 +137,8 @@ body {
   height: 56px;
   padding: 0 20px;
 
-  background-color: var(--accent);
-  color: black;
+  background-color: var(--color-accent);
+  color: var(--color-black);
   border-radius: calc(56px / 2);
 
   transition: all 0.2s;
@@ -229,11 +236,6 @@ body {
   .l-about-text {
     grid-column: 1 / 7;
 
-    margin-bottom: 20px;
-  }
-  .l-portrait {
-    grid-column: 1 / 7;
-
     margin-bottom: 80px;
   }
 
@@ -280,6 +282,10 @@ body {
 }
 
 @media screen and (min-width: 700px) and (max-width: 1099px) {
+  html {
+    font-size: 12px;
+  }
+
   .l-logo {
     grid-column: 1 / 5;
   }
@@ -302,12 +308,6 @@ body {
 
   .l-about-text {
     grid-column: 1 / 7;
-
-    margin-bottom: 20px;
-  }
-
-  .l-portrait {
-    grid-column: 1 / 5;
 
     margin-bottom: 80px;
   }
@@ -382,12 +382,6 @@ body {
 
   .l-about-text {
     grid-column: 3 / 7;
-
-    margin-bottom: 20px;
-  }
-
-  .l-portrait {
-    grid-column: 3 / 6;
 
     margin-bottom: 80px;
   }
