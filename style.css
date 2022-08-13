@@ -135,6 +135,8 @@ body {
 
   padding: var(--space-xs) 1.25rem;
 
+  height: fit-content;
+
   background-color: var(--color-accent);
   color: var(--color-black);
   border-radius: calc(3.25rem / 2);
