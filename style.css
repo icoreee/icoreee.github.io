@@ -1,6 +1,5 @@
 :root {
   --color-accent: #fab519; /* fallback for oklch */
-  --color-aacent: oklch(83.5% 0.192 80.08);
 
   --color-black: #000;
   --color-white: #fff;
@@ -10,6 +9,12 @@
   --space-m: 2rem;
   --space-s: 1rem;
   --space-xs: 0.5rem;
+}
+
+@media (color-gamut: p3) {
+  :root {
+    --color-accent: oklch(83.5% 0.192 80.08);
+  }
 }
 
 /* SETUP */
