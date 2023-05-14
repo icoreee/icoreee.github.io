@@ -56,9 +56,11 @@ body {
 
   display: grid;
   grid-auto-columns: minmax(0, 1fr);
+  grid-template-rows: auto 1fr;
   column-gap: 20px;
 
   margin: var(--space-s) 20px;
+  min-height: calc(100vh - var(--space-s) * 2);
 
   background-color: var(--color-black);
   color: var(--color-white);
