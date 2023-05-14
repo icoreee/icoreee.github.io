@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Host: https://dmitryfrolov.com
-sitemap: https://dmitryfrolov.com/sitemap.xml
+Host: https://frolov.work
+sitemap: https://frolov.work/sitemap.xml
