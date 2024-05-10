@@ -175,7 +175,8 @@ body {
   margin-top: var(--space-xs);
 }
 
-.c-works {
+.c-works,
+.c-pet-projects {
   display: contents;
 }
 
