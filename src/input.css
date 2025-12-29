@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
-@source "../*.html";
-@source "../works/**/*.html";
+@source "./*.html";
+@source "./works/**/*.html";
 
 @theme {
   --color-accent: #fab519;

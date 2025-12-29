@@ -39,9 +39,7 @@ const findHtmlFiles = (dir, files = []) => {
   for (const item of fs.readdirSync(dir)) {
     const full = path.join(dir, item);
     if (fs.statSync(full).isDirectory()) {
-      if (!["node_modules", "dist", ".git", "src"].includes(item)) {
-        findHtmlFiles(full, files);
-      }
+      findHtmlFiles(full, files);
     } else if (item.endsWith(".html")) {
       files.push(full);
     }
@@ -58,9 +56,10 @@ const findHtmlFiles = (dir, files = []) => {
   execSync(`npx tailwindcss -i ./src/input.css -o ./${DIST}/style.css --minify`);
 
   console.log("Minifying HTML...");
-  const htmlFiles = findHtmlFiles(".");
+  const htmlFiles = findHtmlFiles("src");
   for (const file of htmlFiles) {
-    const dest = path.join(DIST, file);
+    const relative = path.relative("src", file);
+    const dest = path.join(DIST, relative);
     await minifyHtml(file, dest);
     console.log(`  ${file} -> ${dest}`);
   }
@@ -73,7 +72,6 @@ const findHtmlFiles = (dir, files = []) => {
   fs.copyFileSync("robots.txt", path.join(DIST, "robots.txt"));
   fs.copyFileSync("sitemap.xml", path.join(DIST, "sitemap.xml"));
   fs.copyFileSync("CNAME", path.join(DIST, "CNAME"));
-  fs.copyFileSync("googlef32f4aa09d540e1e.html", path.join(DIST, "googlef32f4aa09d540e1e.html"));
 
   console.log("Done! Output in dist/");
 })();
