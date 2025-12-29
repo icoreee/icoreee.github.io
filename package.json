@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss -i ./src/input.css -o ./style.css --minify",
-    "dev": "tailwindcss -i ./src/input.css -o ./style.css --watch"
+    "dev": "tailwindcss -i ./src/input.css -o ./style.css --watch",
+    "build": "node build.js"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +12,7 @@
   "description": "",
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.18",
+    "html-minifier-terser": "^7.2.0",
     "tailwindcss": "^4.1.18"
   }
 }
