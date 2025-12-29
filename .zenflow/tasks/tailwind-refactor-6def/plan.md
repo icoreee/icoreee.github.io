@@ -18,47 +18,38 @@ Do not make assumptions on important decisions — get clarification first.
 
 ## Workflow Steps
 
-### [ ] Step: Technical Specification
+### [x] Step: Technical Specification
 
-Assess the task's difficulty, as underestimating it leads to poor outcomes.
-- easy: Straightforward implementation, trivial bug fix or feature
-- medium: Moderate complexity, some edge cases or caveats to consider
-- hard: Complex logic, many caveats, architectural considerations, or high-risk changes
+**Difficulty**: Medium - refactoring existing CSS to Tailwind while maintaining complex responsive grid layouts.
 
-Create a technical specification for the task that is appropriate for the complexity level:
-- Review the existing codebase architecture and identify reusable components.
-- Define the implementation approach based on established patterns in the project.
-- Identify all source code files that will be created or modified.
-- Define any necessary data model, API, or interface changes.
-- Describe verification steps using the project's test and lint commands.
-
-Save the output to `{@artifacts_path}/spec.md` with:
-- Technical context (language, dependencies)
-- Implementation approach
-- Source code structure changes
-- Data model / API / interface changes
-- Verification approach
-
-If the task is complex enough, create a detailed implementation plan based on `{@artifacts_path}/spec.md`:
-- Break down the work into concrete tasks (incrementable, testable milestones)
-- Each task should reference relevant contracts and include verification steps
-- Replace the Implementation step below with the planned tasks
-
-Rule of thumb for step size: each step should represent a coherent unit of work (e.g., implement a component, add an API endpoint, write tests for a module). Avoid steps that are too granular (single function).
-
-Save to `{@artifacts_path}/plan.md`. If the feature is trivial and doesn't warrant this breakdown, keep the Implementation step below as is.
+**Approach**: Use Tailwind CSS v4 CLI with CSS-based configuration (@theme). Keep complex grid layout rules in CSS while converting utility classes (typography, colors, spacing, transitions) to Tailwind utilities.
 
 ---
 
-### [ ] Step: Implementation
+### [x] Step: Implementation
 
-Implement the task according to the technical specification and general engineering best practices.
+Implemented Tailwind CSS refactor for static HTML portfolio site:
 
-1. Break the task into steps where possible.
-2. Implement the required changes in the codebase.
-3. Add and run relevant tests and linters.
-4. Perform basic manual verification if applicable.
-5. After completion, write a report to `{@artifacts_path}/report.md` describing:
-   - What was implemented
-   - How the solution was tested
-   - The biggest issues or challenges encountered
+1. **Setup**: Installed Tailwind CSS v4 with @tailwindcss/cli
+2. **Configuration**: Created `src/input.css` with:
+   - Custom theme variables (accent color, spacing, typography)
+   - Base styles (reset, body grid, list styles)
+   - Complex responsive grid layouts (l-* classes) preserved in CSS
+   - Component styles (c-img, card-bottom, etc.)
+3. **HTML Refactoring**: Updated all 4 HTML files to use Tailwind utility classes:
+   - `index.html`
+   - `404.html`
+   - `works/appulate/index.html`
+   - `works/muranofood/index.html`
+4. **Build**: Successfully compiled with `npm run build`
+
+**Files modified**:
+- `.gitignore` - added node_modules/
+- `package.json` - created with build/dev scripts
+- `src/input.css` - Tailwind source with custom theme
+- `style.css` - generated output (~10KB minified)
+- All 4 HTML files - refactored to use Tailwind utilities
+
+**Commands**:
+- `npm run build` - build for production
+- `npm run dev` - watch mode for development
