@@ -65,13 +65,14 @@ const findHtmlFiles = (dir, files = []) => {
   }
 
   console.log("Copying assets...");
-  copyRecursive("img", path.join(DIST, "img"));
-  copyRecursive("favicons", path.join(DIST, "favicons"));
-  fs.copyFileSync("favicon.ico", path.join(DIST, "favicon.ico"));
-  fs.copyFileSync("cv.pdf", path.join(DIST, "cv.pdf"));
-  fs.copyFileSync("robots.txt", path.join(DIST, "robots.txt"));
-  fs.copyFileSync("sitemap.xml", path.join(DIST, "sitemap.xml"));
-  fs.copyFileSync("CNAME", path.join(DIST, "CNAME"));
+  copyRecursive("src/img", path.join(DIST, "img"));
+  copyRecursive("src/favicons", path.join(DIST, "favicons"));
+  fs.copyFileSync("src/favicon.ico", path.join(DIST, "favicon.ico"));
+  fs.copyFileSync("src/cv.pdf", path.join(DIST, "cv.pdf"));
+  fs.copyFileSync("src/robots.txt", path.join(DIST, "robots.txt"));
+  fs.copyFileSync("src/sitemap.xml", path.join(DIST, "sitemap.xml"));
+  fs.copyFileSync("src/CNAME", path.join(DIST, "CNAME"));
+  fs.copyFileSync("src/web.config", path.join(DIST, "web.config"));
 
   console.log("Done! Output in dist/");
 })();
