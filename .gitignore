@@ -1,5 +1,4 @@
 .DS_Store
-img/.DS_Store
-img/webp/.DS_Store
-package-lock.json
-package.json
+node_modules/
+dist/
+src/style.css

@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@source "./*.html";
+@source "./works/**/*.html";
+
+@theme {
+  --color-accent: #fab519;
+  --color-black: #000;
+  --color-white: #fff;
+
+  --spacing-xs: 0.5rem;
+  --spacing-s: 1rem;
+  --spacing-m: 2rem;
+  --spacing-l: 3rem;
+  --spacing-xl: 7rem;
+
+  --breakpoint-md: 700px;
+  --breakpoint-lg: 1100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  font-weight: 400;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+ol,
+ul {
+  list-style-position: inside;
+}
+
+ul {
+  list-style-type: "— ";
+}
+
+body {
+  font-family: synthese, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-auto-rows: auto;
+  column-gap: 20px;
+
+  margin: var(--spacing-s) 20px;
+  min-height: calc(100vh - var(--spacing-s) * 2);
+
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.link-icon {
+  margin: 4px 0 0 4px;
+  fill: currentColor;
+}
+
+.card-bottom {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: var(--spacing-xs);
+}
+
+.card-bottom .card-link {
+  text-align: right;
+  flex-shrink: 0;
+  margin-left: 16px;
+}
+
+.c-img {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: #d4d4d4;
+}
+
+.c-img img,
+.c-img video {
+  display: block;
+  max-width: 100%;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.05);
+}
+
+.c-works,
+.c-pet-projects {
+  display: contents;
+}
+
+.c-contacts-links > *:not(:last-child) {
+  display: block;
+  margin-bottom: var(--spacing-s);
+}
+
+@media (max-width: 699px) {
+  :root {
+    --spacing-xl: 5rem;
+  }
+}
