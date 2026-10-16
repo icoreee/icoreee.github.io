@@ -3,7 +3,7 @@
   xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>https://frolov.work/</loc>
-    <lastmod>2023-05-14T15:21:23+00:00</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
@@ -13,11 +13,6 @@
   </url>
   <url>
     <loc>https://frolov.work/works/appulate/</loc>
-    <lastmod>2023-05-14T15:21:23+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://frolov.work/works/muranofood/</loc>
     <lastmod>2023-05-14T15:21:23+00:00</lastmod>
     <priority>0.80</priority>
   </url>
